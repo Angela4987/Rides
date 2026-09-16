@@ -1,0 +1,770 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2026-09-16 18:08:45 #1 store] 
+Database 'C:\Users\norie\Desktop\Rides\Rides24\src\main\resources\rides.temp' is opened by 32736@Angela
+
+[2026-09-16 18:08:45 #2 type.registry] 
+New type domain.User
+
+[2026-09-16 18:08:45 #3 type.registry] 
+New type domain.Driver
+
+[2026-09-16 18:08:45 #4 type] 
+Type domain.User is not enhanced.
+
+[2026-09-16 18:08:45 #5 type.registry] 
+New type domain.Balorazioa
+
+[2026-09-16 18:08:45 #6 type.registry] 
+New type domain.Mugimendua
+
+[2026-09-16 18:08:45 #7 type] 
+Type domain.Driver is not enhanced.
+
+[2026-09-16 18:08:45 #8 type.registry] 
+New type domain.Erreklamazioa
+
+[2026-09-16 18:08:45 #9 type.registry] 
+New type domain.Kotxea
+
+[2026-09-16 18:08:45 #10 type.registry] 
+New type domain.Ride
+
+[2026-09-16 18:08:45 #11 type] 
+Type domain.Balorazioa is not enhanced.
+
+[2026-09-16 18:08:45 #12 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2026-09-16 18:08:45 #13 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2026-09-16 18:08:45 #14 type.registry] 
+New type domain.Mezua
+
+[2026-09-16 18:08:45 #15 type.registry] 
+New type domain.Erreserba
+
+[2026-09-16 18:08:45 #16 type.registry] 
+New type domain.Admin
+
+[2026-09-16 18:08:45 #17 type.registry] 
+New type domain.Bidaiaria
+
+[2026-09-16 18:08:45 #18 type] 
+Type domain.Kotxea is not enhanced.
+
+[2026-09-16 18:08:45 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2026-09-16 18:08:45 #20 type] 
+Type domain.Mezua is not enhanced.
+
+[2026-09-16 18:08:45 #21 type] 
+Type domain.Erreserba is not enhanced.
+
+[2026-09-16 18:08:45 #22 type] 
+Type domain.Admin is not enhanced.
+
+[2026-09-16 18:08:45 #23 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2026-09-16 18:08:45 #24 type.registry] 
+New type domain.Alerta
+
+[2026-09-16 18:08:45 #25 type] 
+Type domain.Alerta is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2026-09-16 18:09:08 #1 store] 
+Database 'C:\Users\norie\Desktop\Rides\Rides24\src\main\resources\rides.temp' is opened by 25056@Angela
+
+[2026-09-16 18:09:08 #2 type.registry] 
+New type domain.User
+
+[2026-09-16 18:09:08 #3 type.registry] 
+New type domain.Driver
+
+[2026-09-16 18:09:08 #4 type] 
+Type domain.User is not enhanced.
+
+[2026-09-16 18:09:08 #5 type.registry] 
+New type domain.Balorazioa
+
+[2026-09-16 18:09:08 #6 type.registry] 
+New type domain.Mugimendua
+
+[2026-09-16 18:09:08 #7 type] 
+Type domain.Driver is not enhanced.
+
+[2026-09-16 18:09:08 #8 type.registry] 
+New type domain.Erreklamazioa
+
+[2026-09-16 18:09:08 #9 type.registry] 
+New type domain.Kotxea
+
+[2026-09-16 18:09:08 #10 type.registry] 
+New type domain.Ride
+
+[2026-09-16 18:09:08 #11 type] 
+Type domain.Balorazioa is not enhanced.
+
+[2026-09-16 18:09:08 #12 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2026-09-16 18:09:08 #13 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2026-09-16 18:09:08 #14 type.registry] 
+New type domain.Mezua
+
+[2026-09-16 18:09:08 #15 type.registry] 
+New type domain.Erreserba
+
+[2026-09-16 18:09:08 #16 type.registry] 
+New type domain.Admin
+
+[2026-09-16 18:09:08 #17 type.registry] 
+New type domain.Bidaiaria
+
+[2026-09-16 18:09:08 #18 type] 
+Type domain.Kotxea is not enhanced.
+
+[2026-09-16 18:09:08 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2026-09-16 18:09:08 #20 type] 
+Type domain.Mezua is not enhanced.
+
+[2026-09-16 18:09:08 #21 type] 
+Type domain.Erreserba is not enhanced.
+
+[2026-09-16 18:09:08 #22 type] 
+Type domain.Admin is not enhanced.
+
+[2026-09-16 18:09:08 #23 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2026-09-16 18:09:08 #24 type.registry] 
+New type domain.Alerta
+
+[2026-09-16 18:09:08 #25 type] 
+Type domain.Alerta is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2026-09-16 18:19:44 #1 store] 
+Database 'C:\Users\norie\Desktop\Rides\Rides24\src\main\resources\rides.temp' is opened by 4380@Angela
+
+[2026-09-16 18:19:44 #2 type.registry] 
+New type domain.User
+
+[2026-09-16 18:19:44 #3 type.registry] 
+New type domain.Driver
+
+[2026-09-16 18:19:44 #4 type] 
+Type domain.User is not enhanced.
+
+[2026-09-16 18:19:44 #5 type.registry] 
+New type domain.Balorazioa
+
+[2026-09-16 18:19:44 #6 type.registry] 
+New type domain.Mugimendua
+
+[2026-09-16 18:19:44 #7 type] 
+Type domain.Driver is not enhanced.
+
+[2026-09-16 18:19:44 #8 type.registry] 
+New type domain.Erreklamazioa
+
+[2026-09-16 18:19:44 #9 type.registry] 
+New type domain.Kotxea
+
+[2026-09-16 18:19:44 #10 type.registry] 
+New type domain.Ride
+
+[2026-09-16 18:19:44 #11 type] 
+Type domain.Balorazioa is not enhanced.
+
+[2026-09-16 18:19:44 #12 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2026-09-16 18:19:44 #13 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2026-09-16 18:19:44 #14 type.registry] 
+New type domain.Mezua
+
+[2026-09-16 18:19:44 #15 type.registry] 
+New type domain.Erreserba
+
+[2026-09-16 18:19:44 #16 type.registry] 
+New type domain.Admin
+
+[2026-09-16 18:19:44 #17 type.registry] 
+New type domain.Bidaiaria
+
+[2026-09-16 18:19:44 #18 type] 
+Type domain.Kotxea is not enhanced.
+
+[2026-09-16 18:19:44 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2026-09-16 18:19:44 #20 type] 
+Type domain.Mezua is not enhanced.
+
+[2026-09-16 18:19:44 #21 type] 
+Type domain.Erreserba is not enhanced.
+
+[2026-09-16 18:19:44 #22 type] 
+Type domain.Admin is not enhanced.
+
+[2026-09-16 18:19:44 #23 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2026-09-16 18:19:44 #24 type.registry] 
+New type domain.Alerta
+
+[2026-09-16 18:19:44 #25 type] 
+Type domain.Alerta is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2026-09-16 18:20:07 #1 store] 
+Database 'C:\Users\norie\Desktop\Rides\Rides24\src\main\resources\rides.temp' is opened by 31960@Angela
+
+[2026-09-16 18:20:07 #2 type.registry] 
+New type domain.User
+
+[2026-09-16 18:20:07 #3 type.registry] 
+New type domain.Driver
+
+[2026-09-16 18:20:07 #4 type] 
+Type domain.User is not enhanced.
+
+[2026-09-16 18:20:07 #5 type.registry] 
+New type domain.Balorazioa
+
+[2026-09-16 18:20:07 #6 type.registry] 
+New type domain.Mugimendua
+
+[2026-09-16 18:20:07 #7 type] 
+Type domain.Driver is not enhanced.
+
+[2026-09-16 18:20:07 #8 type.registry] 
+New type domain.Erreklamazioa
+
+[2026-09-16 18:20:07 #9 type.registry] 
+New type domain.Kotxea
+
+[2026-09-16 18:20:07 #10 type.registry] 
+New type domain.Ride
+
+[2026-09-16 18:20:07 #11 type] 
+Type domain.Balorazioa is not enhanced.
+
+[2026-09-16 18:20:07 #12 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2026-09-16 18:20:07 #13 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2026-09-16 18:20:07 #14 type.registry] 
+New type domain.Mezua
+
+[2026-09-16 18:20:07 #15 type.registry] 
+New type domain.Erreserba
+
+[2026-09-16 18:20:07 #16 type.registry] 
+New type domain.Admin
+
+[2026-09-16 18:20:07 #17 type.registry] 
+New type domain.Bidaiaria
+
+[2026-09-16 18:20:07 #18 type] 
+Type domain.Kotxea is not enhanced.
+
+[2026-09-16 18:20:07 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2026-09-16 18:20:07 #20 type] 
+Type domain.Mezua is not enhanced.
+
+[2026-09-16 18:20:07 #21 type] 
+Type domain.Erreserba is not enhanced.
+
+[2026-09-16 18:20:07 #22 type] 
+Type domain.Admin is not enhanced.
+
+[2026-09-16 18:20:07 #23 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2026-09-16 18:20:07 #24 type.registry] 
+New type domain.Alerta
+
+[2026-09-16 18:20:07 #25 type] 
+Type domain.Alerta is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2026-09-16 18:21:25 #1 store] 
+Database 'C:\Users\norie\Desktop\Rides\Rides24\src\main\resources\rides.temp' is opened by 35264@Angela
+
+[2026-09-16 18:21:25 #2 type.registry] 
+New type domain.User
+
+[2026-09-16 18:21:25 #3 type.registry] 
+New type domain.Driver
+
+[2026-09-16 18:21:25 #4 type] 
+Type domain.User is not enhanced.
+
+[2026-09-16 18:21:25 #5 type.registry] 
+New type domain.Balorazioa
+
+[2026-09-16 18:21:25 #6 type.registry] 
+New type domain.Mugimendua
+
+[2026-09-16 18:21:25 #7 type] 
+Type domain.Driver is not enhanced.
+
+[2026-09-16 18:21:25 #8 type.registry] 
+New type domain.Erreklamazioa
+
+[2026-09-16 18:21:25 #9 type.registry] 
+New type domain.Kotxea
+
+[2026-09-16 18:21:25 #10 type.registry] 
+New type domain.Ride
+
+[2026-09-16 18:21:25 #11 type] 
+Type domain.Balorazioa is not enhanced.
+
+[2026-09-16 18:21:25 #12 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2026-09-16 18:21:25 #13 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2026-09-16 18:21:25 #14 type.registry] 
+New type domain.Mezua
+
+[2026-09-16 18:21:25 #15 type.registry] 
+New type domain.Erreserba
+
+[2026-09-16 18:21:25 #16 type.registry] 
+New type domain.Admin
+
+[2026-09-16 18:21:25 #17 type.registry] 
+New type domain.Bidaiaria
+
+[2026-09-16 18:21:25 #18 type] 
+Type domain.Kotxea is not enhanced.
+
+[2026-09-16 18:21:25 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2026-09-16 18:21:25 #20 type] 
+Type domain.Mezua is not enhanced.
+
+[2026-09-16 18:21:25 #21 type] 
+Type domain.Erreserba is not enhanced.
+
+[2026-09-16 18:21:25 #22 type] 
+Type domain.Admin is not enhanced.
+
+[2026-09-16 18:21:25 #23 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2026-09-16 18:21:25 #24 type.registry] 
+New type domain.Alerta
+
+[2026-09-16 18:21:25 #25 type] 
+Type domain.Alerta is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2026-09-16 18:22:31 #1 store] 
+Database 'C:\Users\norie\Desktop\Rides\Rides24\src\main\resources\rides.temp' is opened by 23380@Angela
+
+[2026-09-16 18:22:31 #2 type.registry] 
+New type domain.User
+
+[2026-09-16 18:22:31 #3 type.registry] 
+New type domain.Driver
+
+[2026-09-16 18:22:31 #4 type] 
+Type domain.User is not enhanced.
+
+[2026-09-16 18:22:31 #5 type.registry] 
+New type domain.Balorazioa
+
+[2026-09-16 18:22:31 #6 type.registry] 
+New type domain.Mugimendua
+
+[2026-09-16 18:22:31 #7 type] 
+Type domain.Driver is not enhanced.
+
+[2026-09-16 18:22:31 #8 type.registry] 
+New type domain.Erreklamazioa
+
+[2026-09-16 18:22:31 #9 type.registry] 
+New type domain.Kotxea
+
+[2026-09-16 18:22:31 #10 type.registry] 
+New type domain.Ride
+
+[2026-09-16 18:22:31 #11 type] 
+Type domain.Balorazioa is not enhanced.
+
+[2026-09-16 18:22:31 #12 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2026-09-16 18:22:31 #13 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2026-09-16 18:22:31 #14 type.registry] 
+New type domain.Mezua
+
+[2026-09-16 18:22:31 #15 type.registry] 
+New type domain.Erreserba
+
+[2026-09-16 18:22:31 #16 type.registry] 
+New type domain.Admin
+
+[2026-09-16 18:22:31 #17 type.registry] 
+New type domain.Bidaiaria
+
+[2026-09-16 18:22:31 #18 type] 
+Type domain.Kotxea is not enhanced.
+
+[2026-09-16 18:22:31 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2026-09-16 18:22:31 #20 type] 
+Type domain.Mezua is not enhanced.
+
+[2026-09-16 18:22:31 #21 type] 
+Type domain.Erreserba is not enhanced.
+
+[2026-09-16 18:22:31 #22 type] 
+Type domain.Admin is not enhanced.
+
+[2026-09-16 18:22:31 #23 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2026-09-16 18:22:31 #24 type.registry] 
+New type domain.Alerta
+
+[2026-09-16 18:22:31 #25 type] 
+Type domain.Alerta is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2026-09-16 18:23:09 #1 store] 
+Database 'C:\Users\norie\Desktop\Rides\Rides24\src\main\resources\rides.temp' is opened by 25852@Angela
+
+[2026-09-16 18:23:09 #2 type.registry] 
+New type domain.User
+
+[2026-09-16 18:23:09 #3 type.registry] 
+New type domain.Driver
+
+[2026-09-16 18:23:09 #4 type] 
+Type domain.User is not enhanced.
+
+[2026-09-16 18:23:09 #5 type.registry] 
+New type domain.Balorazioa
+
+[2026-09-16 18:23:09 #6 type.registry] 
+New type domain.Mugimendua
+
+[2026-09-16 18:23:09 #7 type] 
+Type domain.Driver is not enhanced.
+
+[2026-09-16 18:23:09 #8 type.registry] 
+New type domain.Erreklamazioa
+
+[2026-09-16 18:23:09 #9 type.registry] 
+New type domain.Kotxea
+
+[2026-09-16 18:23:09 #10 type.registry] 
+New type domain.Ride
+
+[2026-09-16 18:23:09 #11 type] 
+Type domain.Balorazioa is not enhanced.
+
+[2026-09-16 18:23:09 #12 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2026-09-16 18:23:09 #13 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2026-09-16 18:23:09 #14 type.registry] 
+New type domain.Mezua
+
+[2026-09-16 18:23:09 #15 type.registry] 
+New type domain.Erreserba
+
+[2026-09-16 18:23:09 #16 type.registry] 
+New type domain.Admin
+
+[2026-09-16 18:23:09 #17 type.registry] 
+New type domain.Bidaiaria
+
+[2026-09-16 18:23:09 #18 type] 
+Type domain.Kotxea is not enhanced.
+
+[2026-09-16 18:23:09 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2026-09-16 18:23:09 #20 type] 
+Type domain.Mezua is not enhanced.
+
+[2026-09-16 18:23:09 #21 type] 
+Type domain.Erreserba is not enhanced.
+
+[2026-09-16 18:23:09 #22 type] 
+Type domain.Admin is not enhanced.
+
+[2026-09-16 18:23:09 #23 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2026-09-16 18:23:09 #24 type.registry] 
+New type domain.Alerta
+
+[2026-09-16 18:23:09 #25 type] 
+Type domain.Alerta is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2026-09-16 18:24:53 #1 store] 
+Database 'C:\Users\norie\Desktop\Rides\Rides24\src\main\resources\rides.temp' is opened by 36004@Angela
+
+[2026-09-16 18:24:53 #2 type.registry] 
+New type domain.User
+
+[2026-09-16 18:24:53 #3 type.registry] 
+New type domain.Driver
+
+[2026-09-16 18:24:53 #4 type] 
+Type domain.User is not enhanced.
+
+[2026-09-16 18:24:53 #5 type.registry] 
+New type domain.Balorazioa
+
+[2026-09-16 18:24:53 #6 type.registry] 
+New type domain.Mugimendua
+
+[2026-09-16 18:24:53 #7 type] 
+Type domain.Driver is not enhanced.
+
+[2026-09-16 18:24:53 #8 type.registry] 
+New type domain.Erreklamazioa
+
+[2026-09-16 18:24:53 #9 type.registry] 
+New type domain.Kotxea
+
+[2026-09-16 18:24:53 #10 type.registry] 
+New type domain.Ride
+
+[2026-09-16 18:24:53 #11 type] 
+Type domain.Balorazioa is not enhanced.
+
+[2026-09-16 18:24:53 #12 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2026-09-16 18:24:53 #13 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2026-09-16 18:24:53 #14 type.registry] 
+New type domain.Mezua
+
+[2026-09-16 18:24:53 #15 type.registry] 
+New type domain.Erreserba
+
+[2026-09-16 18:24:53 #16 type.registry] 
+New type domain.Admin
+
+[2026-09-16 18:24:53 #17 type.registry] 
+New type domain.Bidaiaria
+
+[2026-09-16 18:24:53 #18 type] 
+Type domain.Kotxea is not enhanced.
+
+[2026-09-16 18:24:53 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2026-09-16 18:24:53 #20 type] 
+Type domain.Mezua is not enhanced.
+
+[2026-09-16 18:24:53 #21 type] 
+Type domain.Erreserba is not enhanced.
+
+[2026-09-16 18:24:53 #22 type] 
+Type domain.Admin is not enhanced.
+
+[2026-09-16 18:24:53 #23 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2026-09-16 18:24:53 #24 type.registry] 
+New type domain.Alerta
+
+[2026-09-16 18:24:53 #25 type] 
+Type domain.Alerta is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2026-09-16 18:25:07 #1 store] 
+Database 'C:\Users\norie\Desktop\Rides\Rides24\src\main\resources\rides.temp' is opened by 5100@Angela
+
+[2026-09-16 18:25:07 #2 type.registry] 
+New type domain.User
+
+[2026-09-16 18:25:07 #3 type.registry] 
+New type domain.Driver
+
+[2026-09-16 18:25:07 #4 type] 
+Type domain.User is not enhanced.
+
+[2026-09-16 18:25:07 #5 type.registry] 
+New type domain.Balorazioa
+
+[2026-09-16 18:25:07 #6 type.registry] 
+New type domain.Mugimendua
+
+[2026-09-16 18:25:07 #7 type] 
+Type domain.Driver is not enhanced.
+
+[2026-09-16 18:25:07 #8 type.registry] 
+New type domain.Erreklamazioa
+
+[2026-09-16 18:25:07 #9 type.registry] 
+New type domain.Kotxea
+
+[2026-09-16 18:25:07 #10 type.registry] 
+New type domain.Ride
+
+[2026-09-16 18:25:07 #11 type] 
+Type domain.Balorazioa is not enhanced.
+
+[2026-09-16 18:25:07 #12 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2026-09-16 18:25:07 #13 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2026-09-16 18:25:07 #14 type.registry] 
+New type domain.Mezua
+
+[2026-09-16 18:25:07 #15 type.registry] 
+New type domain.Erreserba
+
+[2026-09-16 18:25:07 #16 type.registry] 
+New type domain.Admin
+
+[2026-09-16 18:25:07 #17 type.registry] 
+New type domain.Bidaiaria
+
+[2026-09-16 18:25:07 #18 type] 
+Type domain.Kotxea is not enhanced.
+
+[2026-09-16 18:25:07 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2026-09-16 18:25:07 #20 type] 
+Type domain.Mezua is not enhanced.
+
+[2026-09-16 18:25:07 #21 type] 
+Type domain.Erreserba is not enhanced.
+
+[2026-09-16 18:25:07 #22 type] 
+Type domain.Admin is not enhanced.
+
+[2026-09-16 18:25:07 #23 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2026-09-16 18:25:07 #24 type.registry] 
+New type domain.Alerta
+
+[2026-09-16 18:25:07 #25 type] 
+Type domain.Alerta is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2026-09-16 18:25:28 #1 store] 
+Database 'C:\Users\norie\Desktop\Rides\Rides24\src\main\resources\rides.temp' is opened by 36300@Angela
+
+[2026-09-16 18:25:28 #2 type.registry] 
+New type domain.User
+
+[2026-09-16 18:25:28 #3 type.registry] 
+New type domain.Driver
+
+[2026-09-16 18:25:28 #4 type] 
+Type domain.User is not enhanced.
+
+[2026-09-16 18:25:28 #5 type.registry] 
+New type domain.Balorazioa
+
+[2026-09-16 18:25:28 #6 type.registry] 
+New type domain.Mugimendua
+
+[2026-09-16 18:25:28 #7 type] 
+Type domain.Driver is not enhanced.
+
+[2026-09-16 18:25:28 #8 type.registry] 
+New type domain.Erreklamazioa
+
+[2026-09-16 18:25:28 #9 type.registry] 
+New type domain.Kotxea
+
+[2026-09-16 18:25:29 #10 type.registry] 
+New type domain.Ride
+
+[2026-09-16 18:25:29 #11 type] 
+Type domain.Balorazioa is not enhanced.
+
+[2026-09-16 18:25:29 #12 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2026-09-16 18:25:29 #13 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2026-09-16 18:25:29 #14 type.registry] 
+New type domain.Mezua
+
+[2026-09-16 18:25:29 #15 type.registry] 
+New type domain.Erreserba
+
+[2026-09-16 18:25:29 #16 type.registry] 
+New type domain.Admin
+
+[2026-09-16 18:25:29 #17 type.registry] 
+New type domain.Bidaiaria
+
+[2026-09-16 18:25:29 #18 type] 
+Type domain.Kotxea is not enhanced.
+
+[2026-09-16 18:25:29 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2026-09-16 18:25:29 #20 type] 
+Type domain.Mezua is not enhanced.
+
+[2026-09-16 18:25:29 #21 type] 
+Type domain.Erreserba is not enhanced.
+
+[2026-09-16 18:25:29 #22 type] 
+Type domain.Admin is not enhanced.
+
+[2026-09-16 18:25:29 #23 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2026-09-16 18:25:29 #24 type.registry] 
+New type domain.Alerta
+
+[2026-09-16 18:25:29 #25 type] 
+Type domain.Alerta is not enhanced.
+
