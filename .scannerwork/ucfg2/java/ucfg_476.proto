@@ -1,0 +1,59 @@
+
+1gui.BalorazioaSortuBidaiariGUI#%field_initializer;
+1src\main\java\gui\BalorazioaSortuBidaiariGUI.java ('"1*ë
+1
+__unknown_file (VT
+": "(W&
+%0 javax.swing.DefaultComboBoxModel" javax.swing.DefaultComboBoxModelÖ
+Ç
+"6 "(Y
+%1"*javax.swing.DefaultComboBoxModel#<init>()V*D
+
+__unknown_file ((
+&
+%0 javax.swing.DefaultComboBoxModelç
+ä
+" "(Z2 
+gui.BalorazioaSortuBidaiariGUI"
+ErreserbaBox"__id*D
+
+__unknown_file ((
+&
+%0 javax.swing.DefaultComboBoxModelVT
+#: #(W&
+%2 javax.swing.DefaultComboBoxModel" javax.swing.DefaultComboBoxModelÖ
+Ç
+#6 #(Y
+%3"*javax.swing.DefaultComboBoxModel#<init>()V*D
+
+__unknown_file ((
+&
+%2 javax.swing.DefaultComboBoxModelç
+ä
+# #(Z2 
+gui.BalorazioaSortuBidaiariGUI"
+PuntuazioBox"__id*D
+
+__unknown_file ((
+&
+%2 javax.swing.DefaultComboBoxModel'%
+(5 ((I
+%4"java.util.ArrayListU
+S
+(1 ((K
+%5"java.util.ArrayList#<init>()V*"
+
+__unknown_file (
+
+%4r
+p
+( ((L: 
+gui.BalorazioaSortuBidaiariGUI"
+amaitutakoErreserbak"__id*"
+
+__unknown_file (
+
+%4"
+ º(
+implicit returnB" 
+gui.BalorazioaSortuBidaiariGUI

@@ -1,0 +1,55 @@
+
+*domain.Driver#toString()Ljava/lang/String;*
+ src\main\java\domain\Driver.javaW W("1*è
+1X	 X(r
+p
+X	 X(
+%0java.lang.String"(domain.User#getEmail()Ljava/lang/String;*"
+
+__unknown_file (
+""U
+S
+X	 X(
+%1"__concat*$
+X	 X(
+
+%0java.lang.String*
+X X(
+;r
+p
+X X(.
+%2java.lang.String"(domain.User#getIzena()Ljava/lang/String;*"
+
+__unknown_file (
+""V
+T
+X	 X(.
+%3"__concat*
+X	 X(
+
+%1*$
+X X(.
+
+%2java.lang.StringR
+P
+X/ X(4
+%4"__id*8
+
+__unknown_file (*
+domain.Driver"
+ridesZ
+X
+X	 X(4
+%5"__calculate*
+X. X(/
++*
+X	 X(.
+
+%3*
+X/ X(4
+
+%4"
+X X(5
+
+%5B
+domain.DriverH

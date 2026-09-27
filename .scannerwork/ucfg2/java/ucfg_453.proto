@@ -1,0 +1,124 @@
+
+(domain.Ride#toString()Ljava/lang/String;*
+src\main\java\domain\Ride.javaÈ È("1*“
+
+1
+É	 É(j
+h
+
+É	 É(
+%0java.lang.Integer"__id*;
+
+__unknown_file (*
+domain.Ride"
+
+rideNumbern
+l
+
+É	 É(
+%1java.lang.String"__concat*'
+
+É	 É(
+
+%0java.lang.Integer*
+
+É É(
+;m
+k
+
+É	 É(
+%2java.lang.String"__concat*&
+
+É	 É(
+
+%1java.lang.String*
+
+É É(
+;c
+a
+
+É É( 
+%3java.lang.String"__id*5
+
+__unknown_file (*
+domain.Ride"
+from€
+~
+
+É	 É( 
+%4java.lang.String"__concat*&
+
+É	 É(
+
+%2java.lang.String*&
+
+É É( 
+
+%3java.lang.Stringm
+k
+
+É	 É($
+%5java.lang.String"__concat*&
+
+É	 É( 
+
+%4java.lang.String*
+
+É! É($
+;a
+_
+
+É% É('
+%6java.lang.String"__id*3
+
+__unknown_file (*
+domain.Ride"
+to€
+~
+
+É	 É('
+%7java.lang.String"__concat*&
+
+É	 É($
+
+%5java.lang.String*&
+
+É% É('
+
+%6java.lang.Stringm
+k
+
+É	 É(+
+%8java.lang.String"__concat*&
+
+É	 É('
+
+%7java.lang.String*
+
+É( É(+
+;a
+_
+
+É, É(0
+%9java.util.Date"__id*5
+
+__unknown_file (*
+domain.Ride"
+date
+}
+
+É	 É(0
+%10java.lang.String"__concat*&
+
+É	 É(+
+
+%8java.lang.String*$
+
+É, É(0
+
+%9java.util.Date"'
+
+É É(1
+
+%10java.lang.StringB
+domain.RideH

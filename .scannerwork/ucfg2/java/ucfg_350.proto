@@ -1,0 +1,43 @@
+
+^businessLogic.BLFacadeImplementation#getReservedRidesByDriver(Ldomain/Driver;)Ljava/util/List;C
+7src\main\java\businessLogic\BLFacadeImplementation.java« «(0"startingBlock*÷
+startingBlock
+«0 «(:}
+{
+
+ª ª(
+%1"
+__annotate*)
+
+__unknown_file (
+	WebMethod*0
+
+__unknown_file (
+
+ddomain.DriverT
+R
+
+«8 «(9
+ddomain.Driver"__annotation*"
+
+__unknown_file (
+
+%1*
+1*–
+1
+¬	 ¬(o
+m
+
+¬	 ¬(
+%0"__id*S
+
+__unknown_file (7*5&
+$businessLogic.BLFacadeImplementation"
+	dbManager"
+
+¬ ¬(/
+"": 
+
+«1 «(9
+ddomain.DriverB(&
+$businessLogic.BLFacadeImplementationH
