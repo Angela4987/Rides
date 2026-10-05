@@ -1,0 +1,36 @@
+
+Jdataaccess.DataAccess#getArrivalCities(Ljava/lang/String;)Ljava/util/List;4
+(src\main\java\dataaccess\DataAccess.javaÀ À(%"1*Ç
+1
+Á Á(Y
+W
+
+Á Á(
+%0"__id*=
+
+__unknown_file (!*
+dataaccess.DataAccess"
+dbM
+K
+
+Á Á({
+query
+TypedQuery"__id*"
+
+__unknown_file (
+""Z
+X
+
+Ã Ã(6 
+arrivingCitiesjava.util.List"__id*"
+
+__unknown_file (
+"""0
+
+Ä Ä("
+ 
+arrivingCitiesjava.util.List:&
+
+À& À(1
+fromjava.lang.StringB
+dataaccess.DataAccessH

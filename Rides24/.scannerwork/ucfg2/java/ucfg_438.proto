@@ -1,0 +1,50 @@
+
+Gdomain.Admin#erabiltzaileBerdina(Ljava/lang/String;Ljava/lang/String;)Z)
+src\main\java\domain\Admin.javaF F(#"3*Ù
+2G% G()g
+e
+G% G(3
+%2java.lang.String"__id*;
+
+__unknown_file (*
+domain.Admin"
+	pasahitzaÙÖ
+G% G(E
+%3boolean",java.lang.String#equals(Ljava/lang/Object;)Z*4
+
+__unknown_file (
+
+%2java.lang.String*;
+
+__unknown_file (
+
+	pasahitzajava.lang.String2equals(Ljava/lang/Object;)*
+1*Ú
+3G	 G(c
+a
+G	 G(
+%0java.lang.String"__id*7
+
+__unknown_file (*
+domain.Admin"
+emailÕÒ
+G	 G(!
+%1boolean",java.lang.String#equals(Ljava/lang/Object;)Z*4
+
+__unknown_file (
+
+%0java.lang.String*7
+
+__unknown_file (
+
+emailjava.lang.String2equals(Ljava/lang/Object;)*
+1
+2*!
+1G G(F"
+G G(F
+"":%
+F$ F(1
+emailjava.lang.String:)
+F2 F(B
+	pasahitzajava.lang.StringB
+domain.AdminHX

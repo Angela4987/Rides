@@ -1,0 +1,41 @@
+
+5dataaccess.DataAccess#getnPlaces(Ljava/lang/String;)I4
+(src\main\java\dataaccess\DataAccess.javaË Ë("1*½
+1
+Ì Ì(xv
+
+Ì Ì(
+
+%0void"dataaccess.DataAccess#open()V*5
+
+__unknown_file (
+dataaccess.DataAccess2open()Y
+W
+
+Í Í(
+%1"__id*=
+
+__unknown_file (!*
+dataaccess.DataAccess"
+dbE
+C
+
+Í Í(.
+kKotxea"__id*"
+
+__unknown_file (
+""zx
+
+Î Î(	
+
+%2void"dataaccess.DataAccess#close()V*5
+
+__unknown_file (
+dataaccess.DataAccess2close()"
+
+Ï Ï(
+"":+
+
+Ë Ë('
+	matrikulajava.lang.StringB
+dataaccess.DataAccessHX

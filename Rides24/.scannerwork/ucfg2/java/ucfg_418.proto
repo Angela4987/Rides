@@ -1,0 +1,42 @@
+
+Pdataaccess.DataAccess#erabiltzaileaBilatuAdmin(Ljava/lang/String;)Ldomain/Admin;4
+(src\main\java\dataaccess\DataAccess.javaş ş(&"1*Ğ
+1
+ÿ ÿ(xv
+
+ÿ ÿ(
+
+%0void"dataaccess.DataAccess#open()V*5
+
+__unknown_file (
+dataaccess.DataAccess2open()Y
+W
+
+€ €(
+%1"__id*=
+
+__unknown_file (!*
+dataaccess.DataAccess"
+dbK
+I
+
+€ €('
+adomain.Admin"__id*"
+
+__unknown_file (
+""zx
+
+ (	
+
+%2void"dataaccess.DataAccess#close()V*5
+
+__unknown_file (
+dataaccess.DataAccess2close()"!
+
+‚ ‚(
+
+adomain.Admin:'
+
+ş' ş(3
+emailjava.lang.StringB
+dataaccess.DataAccessH

@@ -1,0 +1,43 @@
+
+VbusinessLogic.BLFacadeImplementation#balorazioaErakutsi(Ldomain/User;)Ljava/util/List;C
+7src\main\java\businessLogic\BLFacadeImplementation.javaî î(+"startingBlock*ó
+startingBlock
+î+ î(3{
+y
+
+í í(
+%1"
+__annotate*)
+
+__unknown_file (
+	WebMethod*.
+
+__unknown_file (
+
+udomain.UserR
+P
+
+î1 î(2
+udomain.User"__annotation*"
+
+__unknown_file (
+
+%1*
+1*–
+1
+ï	 ï(o
+m
+
+ï	 ï(
+%0"__id*S
+
+__unknown_file (7*5&
+$businessLogic.BLFacadeImplementation"
+	dbManager"
+
+ï ï()
+"":
+
+î, î(2
+udomain.UserB(&
+$businessLogic.BLFacadeImplementationH

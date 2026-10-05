@@ -1,0 +1,59 @@
+
+ domain.Driver#%field_initializer*
+ src\main\java\domain\Driver.java ("1*¦
+1
+__unknown_file ($"
+ (*
+%0"java.util.VectorR
+P
+ (,
+%1"java.util.Vector#<init>()V*"
+
+__unknown_file (
+
+%0R
+P
+ (-
+domain.Driver"
+rides"__id*"
+
+__unknown_file (
+
+%064
+" (0
+%2java.util.Vector"java.util.Vectord
+b
+ (2
+%3"java.util.Vector#<init>()V*4
+
+__unknown_file (
+
+%2java.util.Vectorf
+d
+ (3
+domain.Driver"	
+kotxeak"__id*4
+
+__unknown_file (
+
+%2java.util.Vector64
+8 (M
+%4java.util.Vector"java.util.Vectord
+b
+4 (O
+%5"java.util.Vector#<init>()V*4
+
+__unknown_file (
+
+%4java.util.Vectoru
+s
+ (P+
+domain.Driver"
+JasotakoErreklamazioak"__id*4
+
+__unknown_file (
+
+%4java.util.Vector"
+ È(
+implicit returnB
+domain.Driver

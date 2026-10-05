@@ -1,0 +1,43 @@
+
+bbusinessLogic.BLFacadeImplementation#getErabiltzailearenMugimenduak(Ldomain/User;)Ljava/util/List;C
+7src\main\java\businessLogic\BLFacadeImplementation.javaÞ Þ(7"startingBlock*ó
+startingBlock
+Þ7 Þ(?{
+y
+
+Ý Ý(
+%1"
+__annotate*)
+
+__unknown_file (
+	WebMethod*.
+
+__unknown_file (
+
+udomain.UserR
+P
+
+Þ= Þ(>
+udomain.User"__annotation*"
+
+__unknown_file (
+
+%1*
+1*–
+1
+ß	 ß(o
+m
+
+ß	 ß(
+%0"__id*S
+
+__unknown_file (7*5&
+$businessLogic.BLFacadeImplementation"
+	dbManager"
+
+ß ß(5
+"":
+
+Þ8 Þ(>
+udomain.UserB(&
+$businessLogic.BLFacadeImplementationH
