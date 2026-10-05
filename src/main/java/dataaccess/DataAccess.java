@@ -1,6 +1,6 @@
 package dataaccess;
 
-import java.io.IOException;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
@@ -11,9 +11,6 @@ import java.util.ResourceBundle;
 
 import java.time.LocalDate;
 import java.time.ZoneId;
-import java.nio.file.Files;
-import java.nio.file.Path;
-
 
 //import javax.jws.WebMethod;
 import javax.persistence.EntityManager;
@@ -23,14 +20,13 @@ import javax.persistence.TypedQuery;
 
 import configuration.ConfigXML;
 import configuration.UtilDate;
-import domain.Admin;
 import domain.Alerta;
 import domain.Balorazioa;
 import domain.Bidaiaria;
 import domain.Driver;
 import domain.Erreklamazioa;
 import domain.Erreserba;
-import domain.Kotxea;
+
 import domain.Mezua;
 import domain.Mugimendua;
 import domain.Ride;
@@ -40,6 +36,8 @@ import exceptions.KotxeaAlreadyExistException;
 import exceptions.RideAlreadyExistException;
 import exceptions.RideMustBeLaterThanTodayException;
 import exceptions.erreklamazioaEbatzitaException;
+import java.nio.file.*;
+import java.io.IOException;
 
 /**
  * It implements the data access to the objectDb database
@@ -47,21 +45,23 @@ import exceptions.erreklamazioaEbatzitaException;
 public class DataAccess  {
 	private  EntityManager  db;
 	private  EntityManagerFactory emf;
-
+	private static final String BILBO = "Bilbo";
 
 	ConfigXML c=ConfigXML.getInstance();
 
 	public DataAccess()  {
-	if (c.isDatabaseInitialized()) {
-		String fileName = c.getDbFilename();
-		try {
-			Files.delete(Path.of(fileName));
-			Files.deleteIfExists(Path.of(fileName + "$"));
-			System.out.println("File deleted");
-		} catch (IOException e) {
-			System.out.println("Operation failed: " + e.getMessage());
+		if (c.isDatabaseInitialized()) {
+			String fileName=c.getDbFilename();
+			
+			try {
+				Files.delete(Paths.get(fileName));
+				Files.delete(Paths.get(fileName+"$"));
+				
+				System.out.println("File deleted");
+			}catch(IOException e) {
+				System.out.println("Operation failed");
+			}
 		}
-	}
 		open();
 		if  (c.isDatabaseInitialized())initializeDB();
 
@@ -108,42 +108,42 @@ public class DataAccess  {
 			user2.setDirua(50);
 
 			// Administratzaile berria sortu
-			Admin admin1 = new Admin("admin@gmail.com","admin"); 	//GEHITU 
+//			Admin admin1 = new Admin("admin@gmail.com","admin"); 	//GEHITU 
 
 			// Create rides
 			String d = "Donostia";
-			driver1.addRide(d, "Bilbo", UtilDate.newDate(year,month,15), 4, 7);
+			driver1.addRide(d, BILBO, UtilDate.newDate(year,month,15), 4, 7);
 			driver1.addRide(d, "Gazteiz", UtilDate.newDate(year,month,6), 4, 8);
-			driver1.addRide("Bilbo", d, UtilDate.newDate(year,month,25), 4, 4);
+			driver1.addRide(BILBO, d, UtilDate.newDate(year,month,25), 4, 4);
 			driver1.addRide(d, "Iruña", UtilDate.newDate(year,month,7), 4, 8);
 
-			driver2.addRide(d, "Bilbo", UtilDate.newDate(year,month,15), 3, 3);
-			driver2.addRide("Bilbo", d, UtilDate.newDate(year,month,25), 2, 5);
+			driver2.addRide(d, BILBO, UtilDate.newDate(year,month,15), 3, 3);
+			driver2.addRide(BILBO, d, UtilDate.newDate(year,month,25), 2, 5);
 			driver2.addRide("Eibar", "Gasteiz", UtilDate.newDate(year,month,6), 2, 5);
 
-			driver3.addRide("Bilbo", d, UtilDate.newDate(year,month,14), 1, 3);
+			driver3.addRide(BILBO, d, UtilDate.newDate(year,month,14), 1, 3);
 			
 			// GEHITU kotxea
-			((Driver)user2).addKotxe("1234 ABC", 4, "Audi");
+		//	((Driver)user2).addKotxe("1234 ABC", 4, "Audi");
 			//
 			
 			// GEHITU DUGU ADMIN-REN KUDEAKETA PROBATZEKO
-			Ride bidaiberri2=((Driver)user2).addRide("Bilbo", "Donostia", UtilDate.newDate(year,month,25), 2, 5);
-			Ride bidaiberri=((Driver)user2).addRide("Bilbo", "Donostia", UtilDate.newDate(year,month,28), 2, 5);
+			Ride bidaiberri2=((Driver)user2).addRide(BILBO, d, UtilDate.newDate(year,month,25), 2, 5);
+			Ride bidaiberri=((Driver)user2).addRide(BILBO, d, UtilDate.newDate(year,month,28), 2, 5);
 
 			Erreserba errb0= new Erreserba(1,bidaiberri,(Bidaiaria) user1);
 			Erreklamazioa err1=new Erreklamazioa(errb0, "esperientzia txarra", (Bidaiaria) user1, (Driver)user2);
 			err1.setEgoera("deuseztatu");
 			err1.addMezua("Bidaiari: nire dirua bueltan nahi dut");
 			err1.addMezua("Gidari: ez");
-			admin1.addErreklamazioa(err1);
+//		admin1.addErreklamazioa(err1);
 
 			Erreserba errs4= new Erreserba(1,bidaiberri2,(Bidaiaria) user1);
 			Erreklamazioa err4=new Erreklamazioa(errs4, "berandu iritsi gara", (Bidaiaria) user1, (Driver)user2);
 			err4.setEgoera("deuseztatu");
 			err4.addMezua("Bidaiari: gidaria oso motela da");
 			err4.addMezua("Gidari: ez da egia");
-			admin1.addErreklamazioa(err4);
+//			admin1.addErreklamazioa(err4);
 			//
 			
 			db.persist(driver1);
@@ -161,7 +161,7 @@ public class DataAccess  {
 			db.persist(bidaiberri); 
 			db.persist(errb0); 
 			db.persist(err1); 
-			db.persist(admin1);
+//			db.persist(admin1);
 			//
 			
 			db.getTransaction().commit();
@@ -362,8 +362,7 @@ public class DataAccess  {
 		close();
 		return u;
 	}
-
-	// GEHITU
+	/*	// GEHITU
 	public boolean saioaHasiAdmin(String email, String pasahitza) { 
 		open();
 		Admin a = db.find(Admin.class,email);
@@ -384,7 +383,7 @@ public class DataAccess  {
 		close();
 		return a;
 	}
-
+*/
 	public void diruaSartu (float dirua, Bidaiaria t) {
 		open();
 		db.getTransaction().begin();
@@ -556,7 +555,7 @@ public class DataAccess  {
 		db.getTransaction().commit();
 		close();
 	}
-
+/*
 	// ZUZENDU
 	public Kotxea kotxeGehitu(String matrikula, int eserleku, String marka, Driver gidari) throws KotxeaAlreadyExistException {
 		open();
@@ -589,6 +588,7 @@ public class DataAccess  {
 		close();
 		return k.getnEserleku();
 	}
+	*/
 
 	public List<Erreserba> getBidaiariarenErreserbak(Bidaiaria b) {
 		open();
@@ -602,7 +602,7 @@ public class DataAccess  {
 		close();
 		return b2.getErreserbak();
 	}
-
+/*
 	public List<Kotxea> kotxeakEskuratu(Driver d) {
 		open();
 
@@ -615,7 +615,7 @@ public class DataAccess  {
 		close();
 		return d2.getKotxeak();
 	}
-
+*/	
 	// KENDU
 	//	public boolean kotxeaExistitu(String matrikula) {
 	//		open();
@@ -788,7 +788,7 @@ public class DataAccess  {
 		close();
 		return b2.getBidalitakoErreklamazioak();
 	}
-
+/*
 	// GEHITU
 	public List<Erreklamazioa> erreklamazioaErakutsiAdmin(Admin a) {
 		open();
@@ -797,7 +797,7 @@ public class DataAccess  {
 		close();
 		return a2.getJasotakoErreklamazioak();
 	}
-
+*/
 	// GEHITU
 	public List<Erreklamazioa> erreklamazioaErakutsiGidari(Driver g) {
 		open();
@@ -824,7 +824,7 @@ public class DataAccess  {
 		close();
 		return e;
 	}
-
+/*
 	// GEHITU
 	public void egoeraEzarriAdmin(int errekzbk, String egoera, String adminEmail) { 
 		open();
@@ -845,7 +845,7 @@ public class DataAccess  {
 		db.getTransaction().commit();
 		close();
 	}
-
+	*/
 	// GEHITU
 	public void egoeraEzarri(int errekzbk, String egoera) throws erreklamazioaEbatzitaException { 
 		open();
@@ -863,9 +863,10 @@ public class DataAccess  {
 				d.addMugimendua("Dirua kendu zaizu erreklamazioaren onarpenarengatik");		
 			}
 			else if(egoera.equals("deuseztatu")) {
-				TypedQuery<Admin> aquery = db.createQuery("SELECT a FROM Admin a", Admin.class);
+				/*TypedQuery<Admin> aquery = db.createQuery("SELECT a FROM Admin a", Admin.class);
 				Admin a = aquery.getResultList().get(0);
-				a.addErreklamazioa(e);
+				a.addErreklamazioa(e);*/
+				System.out.println("Egoera deuseztatu da.");
 			}
 		} else {
 			throw new erreklamazioaEbatzitaException();

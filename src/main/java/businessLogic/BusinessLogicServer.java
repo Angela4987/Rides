@@ -15,6 +15,7 @@ import javax.swing.border.EmptyBorder;
 import configuration.ConfigXML;
 
 import javax.swing.JTextArea;
+import javax.swing.WindowConstants;
 import javax.xml.ws.Endpoint;
 
 
@@ -22,7 +23,8 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-
+import java.util.logging.Logger;
+import java.util.logging.Level;
 /**
  * It runs the business logic server as a separate process.
  */
@@ -31,6 +33,7 @@ public class BusinessLogicServer extends JDialog {
 	/**
 	 * 
 	 */
+	private static final Logger LOGGER = Logger.getLogger(BusinessLogicServer.class.getName());	
 	private static final long serialVersionUID = 1L;
 	private final JPanel contentPanel = new JPanel();
 	JTextArea textArea;
@@ -40,10 +43,10 @@ public class BusinessLogicServer extends JDialog {
 	public static void main(String[] args) {
 		try {
 			BusinessLogicServer dialog = new BusinessLogicServer();
-			dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
+			dialog.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 			dialog.setVisible(true);
 		} catch (Exception e) {
-			e.printStackTrace();
+			LOGGER.log(Level.SEVERE, "Errorea gertatu da aplikazioa abiaraztean: "+e);
 		}
 	}
 
@@ -71,9 +74,18 @@ public class BusinessLogicServer extends JDialog {
 			getContentPane().add(buttonPane, BorderLayout.SOUTH);
 			{
 				JButton okButton = new JButton("OK");
-				okButton.addActionListener(e -> {
-				    textArea.append("\n\n\nClosing the server... ");
-				    dispose();
+				okButton.addActionListener(e ->{
+					textArea.append("\n\n\nClosing the server...");
+					dispose();
+				});
+				okButton.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent e) {
+						textArea.append("\n\n\nClosing the server... ");
+					    
+							//server.close();
+						
+						System.exit(1);
+					}
 				});
 				okButton.setActionCommand("OK");
 				buttonPane.add(okButton);

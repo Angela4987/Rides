@@ -1,11 +1,11 @@
 
 YbusinessLogic.BLFacadeImplementation#erabiltzaileaBilatu(Ljava/lang/String;)Ldomain/User;C
-7src\main\java\businessLogic\BLFacadeImplementation.java— —( "startingBlock*‡
+7src\main\java\businessLogic\BLFacadeImplementation.java– –( "startingBlock*‡
 startingBlock
-—  —(.…
+–  –(.…
 ‚
 
-– –(
+• •(
 %1"
 __annotate*)
 
@@ -17,7 +17,7 @@ __annotate*)
 emailjava.lang.String[
 Y
 
-—( —(-
+–( –(-
 emailjava.lang.String"__annotation*"
 
 __unknown_file (
@@ -25,19 +25,19 @@ Y
 %1*
 1*–
 1
-˜	 ˜(o
+—	 —(o
 m
 
-˜	 ˜(
+—	 —(
 %0"__id*S
 
 __unknown_file (7*5&
 $businessLogic.BLFacadeImplementation"
 	dbManager"
 
-˜ ˜(.
+— —(.
 "":'
 
-—! —(-
+–! –(-
 emailjava.lang.StringB(&
 $businessLogic.BLFacadeImplementationH

@@ -1,28 +1,0 @@
-
-domain.Driver#hashCode()I,
- src\main\java\domain\Driver.java† †("1*Ô
-1
-‡	 ‡(t
-r
-
-‡ ‡(&
-%0java.lang.String"(domain.User#getEmail()Ljava/lang/String;*"
-
-__unknown_file (
-""±
-®
-
-‡	 ‡('	
-%1int",java.util.Objects#hash([Ljava/lang/Object;)I*1
-
-__unknown_file ("
-java.util.Objects*4
-
-__unknown_file (
-
-%0java.lang.String"
-
-‡ ‡((
-	
-%1intB
-domain.DriverHX

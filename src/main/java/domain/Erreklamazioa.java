@@ -30,7 +30,7 @@ public class Erreklamazioa implements Serializable {
 	private String deskripzioa;
 	private Bidaiaria nork;
 	private Driver nori;
-	private Admin admin;
+	//private Admin admin;
 	private Erreserba erreserba;
 
 	@XmlIDREF
@@ -100,7 +100,7 @@ public class Erreklamazioa implements Serializable {
 	public void setNori(Driver nori) {
 		this.nori = nori;
 	}
-
+/*
 	public Admin getAdmin() {
 		return admin;
 	}
@@ -108,7 +108,7 @@ public class Erreklamazioa implements Serializable {
 	public void setAdmin(Admin admin) {
 		this.admin = admin;
 	}
-	
+	*/
 	public List<Mezua> getMezuak() {
 		return mezuak;
 	}

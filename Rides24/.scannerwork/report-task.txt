@@ -1,7 +1,0 @@
-organization=aitzolw
-projectKey=aitzolw_rideszuzenduta
-serverUrl=https://sonarcloud.io
-serverVersion=8.0.0.108456
-dashboardUrl=https://sonarcloud.io/dashboard?id=aitzolw_rideszuzenduta
-ceTaskId=AaDoU0gXD21AS51bSFsB
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AaDoU0gXD21AS51bSFsB

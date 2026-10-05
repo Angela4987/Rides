@@ -1,59 +1,0 @@
-
-,gui.ErreklamazioaSortuGUI#%field_initializer6
-,src\main\java\gui\ErreklamazioaSortuGUI.java (""1*Ã
-1
-__unknown_file (VT
-": "(W&
-%0 javax.swing.DefaultComboBoxModel" javax.swing.DefaultComboBoxModel…
-‚
-"6 "(Y
-%1"*javax.swing.DefaultComboBoxModel#<init>()V*D
-
-__unknown_file ((
-&
-%0 javax.swing.DefaultComboBoxModelˆ
-…
-" "(Z-
-gui.ErreklamazioaSortuGUI"
-ErreserbaBox"__id*D
-
-__unknown_file ((
-&
-%0 javax.swing.DefaultComboBoxModelVT
-#: #(W&
-%2 javax.swing.DefaultComboBoxModel" javax.swing.DefaultComboBoxModel…
-‚
-#6 #(Y
-%3"*javax.swing.DefaultComboBoxModel#<init>()V*D
-
-__unknown_file ((
-&
-%2 javax.swing.DefaultComboBoxModelˆ
-…
-# #(Z-
-gui.ErreklamazioaSortuGUI"
-PuntuazioBox"__id*D
-
-__unknown_file ((
-&
-%2 javax.swing.DefaultComboBoxModel<:
-'5 '(I
-%4java.util.ArrayList"java.util.ArrayListj
-h
-'1 '(K
-%5"java.util.ArrayList#<init>()V*7
-
-__unknown_file (
-
-%4java.util.ArrayListƒ
-€
-' '(L5
-gui.ErreklamazioaSortuGUI"
-amaitutakoErreserbak"__id*7
-
-__unknown_file (
-
-%4java.util.ArrayList"
- ¨(
-implicit returnB
-gui.ErreklamazioaSortuGUI

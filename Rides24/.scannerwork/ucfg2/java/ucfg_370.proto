@@ -1,43 +1,0 @@
-
-fbusinessLogic.BLFacadeImplementation#erreklamazioaErakutsiBidaiari(Ldomain/Bidaiaria;)Ljava/util/List;C
-7src\main\java\businessLogic\BLFacadeImplementation.java¯ ¯(9"startingBlock*þ
-startingBlock
-¯9 ¯(F€
-~
-
-® ®(
-%1"
-__annotate*)
-
-__unknown_file (
-	WebMethod*3
-
-__unknown_file (
-
-bdomain.BidaiariaW
-U
-
-¯D ¯(E
-bdomain.Bidaiaria"__annotation*"
-
-__unknown_file (
-
-%1*
-1*–
-1
-°	 °(o
-m
-
-°	 °(
-%0"__id*S
-
-__unknown_file (7*5&
-$businessLogic.BLFacadeImplementation"
-	dbManager"
-
-° °(4
-"":#
-
-¯: ¯(E
-bdomain.BidaiariaB(&
-$businessLogic.BLFacadeImplementationH

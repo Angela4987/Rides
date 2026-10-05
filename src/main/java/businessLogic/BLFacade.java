@@ -6,7 +6,7 @@ import java.util.List;
 //import domain.Booking;
 import domain.Ride;
 import domain.User;
-import domain.Admin;
+
 import domain.Alerta;
 import domain.Balorazioa;
 import domain.Bidaiaria;
@@ -97,7 +97,7 @@ public interface BLFacade  {
 	
 	@WebMethod public User erabiltzaileaBilatu(String email);
 	
-	@WebMethod public Admin erabiltzaileaBilatuAdmin(String email); // GEHITU
+//	@WebMethod public Admin erabiltzaileaBilatuAdmin(String email); // GEHITU
 	
 	@WebMethod public void diruaSartu(float dirua, Bidaiaria t);
 
@@ -153,7 +153,7 @@ public interface BLFacade  {
 	
 	@WebMethod public List<Erreklamazioa> erreklamazioaErakutsiBidaiari(Bidaiaria b); 		//GEHITU
 	
-	@WebMethod public List<Erreklamazioa> erreklamazioaErakutsiAdmin(Admin a); 		//GEHITU
+//	@WebMethod public List<Erreklamazioa> erreklamazioaErakutsiAdmin(Admin a); 		//GEHITU
 	
 	@WebMethod public List<Erreklamazioa> erreklamazioaErakutsiGidari(Driver g); 	// GEHITU
 	
@@ -161,7 +161,7 @@ public interface BLFacade  {
 	
 	@WebMethod public Erreklamazioa erreklamazioaLortu(int errekzbk); 		//GEHITU
 	
-	@WebMethod public void egoeraEzarriAdmin(int errekzbk, String egoera, Admin a); 	//GEHITU
+//	@WebMethod public void egoeraEzarriAdmin(int errekzbk, String egoera, Admin a); 	//GEHITU
 	
 	@WebMethod public void egoeraEzarri(int errekzbk, String egoera) throws erreklamazioaEbatzitaException; 	// GEHITU
 	

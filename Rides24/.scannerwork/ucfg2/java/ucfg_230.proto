@@ -1,60 +1,0 @@
-
-Fdomain.User#erabiltzaileBerdina(Ljava/lang/String;Ljava/lang/String;)Z*
-src\main\java\domain\User.java‹ ‹(#"3*Þ
-2
-Œ% Œ()h
-f
-
-Œ% Œ(3
-%2java.lang.String"__id*:
-
-__unknown_file (*
-domain.User"
-	pasahitzaÛØ
-
-Œ% Œ(E
-%3boolean",java.lang.String#equals(Ljava/lang/Object;)Z*4
-
-__unknown_file (
-
-%2java.lang.String*;
-
-__unknown_file (
-
-	pasahitzajava.lang.String2equals(Ljava/lang/Object;)*
-1*ß
-3
-Œ	 Œ(d
-b
-
-Œ	 Œ(
-%0java.lang.String"__id*6
-
-__unknown_file (*
-domain.User"
-email×Ô
-
-Œ	 Œ(!
-%1boolean",java.lang.String#equals(Ljava/lang/Object;)Z*4
-
-__unknown_file (
-
-%0java.lang.String*7
-
-__unknown_file (
-
-emailjava.lang.String2equals(Ljava/lang/Object;)*
-1
-2*%
-1
-Œ Œ(F"
-
-Œ Œ(F
-"":'
-
-‹$ ‹(1
-emailjava.lang.String:+
-
-‹2 ‹(B
-	pasahitzajava.lang.StringB
-domain.UserHX

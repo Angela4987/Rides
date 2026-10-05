@@ -151,14 +151,7 @@ public class Ride implements Serializable {
 	public int getnPlaces() {
 		return nPlaces;
 	}
-
-	/**
-	 * Set the free places of the ride
-	 * 
-	 * @param  nPlaces places to be set
-	 */
-
-
+	
 	/**
 	 * Get the driver associated to the ride
 	 * 

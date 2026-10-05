@@ -1,35 +1,0 @@
-
-FbusinessLogic.BLFacadeImplementation#getDepartCities()Ljava/util/List;A
-7src\main\java\businessLogic\BLFacadeImplementation.java9  9(/"1*æ
-1: :(m
-k
-: :(
-%0"__id*S
-
-__unknown_file (7*5&
-$businessLogic.BLFacadeImplementation"
-	dbManagerm
-k
-< <((
-%1"__id*S
-
-__unknown_file (7*5&
-$businessLogic.BLFacadeImplementation"
-	dbManagerY
-W
-< <(;!
-departLocationsjava.util.List"__id*"
-
-__unknown_file (
-""m
-k
-> >(
-%2"__id*S
-
-__unknown_file (7*5&
-$businessLogic.BLFacadeImplementation"
-	dbManager"/
-@ @(#
-!
-departLocationsjava.util.ListB(&
-$businessLogic.BLFacadeImplementationH

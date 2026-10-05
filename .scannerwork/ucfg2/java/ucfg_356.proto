@@ -1,11 +1,11 @@
 
 DbusinessLogic.BLFacadeImplementation#getnPlaces(Ljava/lang/String;)IC
-7src\main\java\businessLogic\BLFacadeImplementation.java   ("startingBlock*è
+7src\main\java\businessLogic\BLFacadeImplementation.java… …("startingBlock*è
 startingBlock
-   ((â
+… …((â
 Ü
 
-… …(
+» »(
 %1"
 __annotate*)
 
@@ -17,7 +17,7 @@ __annotate*)
 	matrikulajava.lang.String_
 ]
 
-   ('
+… …('
 	matrikulajava.lang.String"__annotation*"
 
 __unknown_file (
@@ -25,19 +25,19 @@ __annotate*)
 %1*
 1*ñ
 1
-À	 À(o
+ 	  (o
 m
 
-À	 À(
+ 	  (
 %0"__id*S
 
 __unknown_file (7*5&
 $businessLogic.BLFacadeImplementation"
 	dbManager"
 
-À À()
+   ()
 "":+
 
-   ('
+… …('
 	matrikulajava.lang.StringB(&
 $businessLogic.BLFacadeImplementationHX

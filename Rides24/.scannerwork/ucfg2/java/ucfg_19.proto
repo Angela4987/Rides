@@ -1,77 +1,0 @@
-
-/gui.BalorazioaSortuGidariGUI#%field_initializer9
-/src\main\java\gui\BalorazioaSortuGidariGUI.java (%"1*ò
-
-1
-__unknown_file (VT
-"7 "(T&
-%0 javax.swing.DefaultComboBoxModel" javax.swing.DefaultComboBoxModel…
-‚
-"3 "(V
-%1"*javax.swing.DefaultComboBoxModel#<init>()V*D
-
-__unknown_file ((
-&
-%0 javax.swing.DefaultComboBoxModelˆ
-…
-" "(W-
-gui.BalorazioaSortuGidariGUI"
-	BidaiaBox"__id*D
-
-__unknown_file ((
-&
-%0 javax.swing.DefaultComboBoxModelVT
-#: #(W&
-%2 javax.swing.DefaultComboBoxModel" javax.swing.DefaultComboBoxModel…
-‚
-#6 #(Y
-%3"*javax.swing.DefaultComboBoxModel#<init>()V*D
-
-__unknown_file ((
-&
-%2 javax.swing.DefaultComboBoxModel‹
-ˆ
-# #(Z0
-gui.BalorazioaSortuGidariGUI"
-PuntuazioBox"__id*D
-
-__unknown_file ((
-&
-%2 javax.swing.DefaultComboBoxModelVT
-%8 %(T&
-%4 javax.swing.DefaultComboBoxModel" javax.swing.DefaultComboBoxModel…
-‚
-%4 %(V
-%5"*javax.swing.DefaultComboBoxModel#<init>()V*D
-
-__unknown_file ((
-&
-%4 javax.swing.DefaultComboBoxModelŠ
-‡
-% %(W/
-gui.BalorazioaSortuGidariGUI"
-BidaiariBox"__id*D
-
-__unknown_file ((
-&
-%4 javax.swing.DefaultComboBoxModel'%
-)- )(<
-%6"java.util.ArrayListU
-S
-)) )(>
-%7"java.util.ArrayList#<init>()V*"
-
-__unknown_file (
-
-%6m
-k
-) )(?5
-gui.BalorazioaSortuGidariGUI"
-amaitutakoBidaiak"__id*"
-
-__unknown_file (
-
-%6"
- ¿(
-implicit returnB 
-gui.BalorazioaSortuGidariGUI

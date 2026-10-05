@@ -1,43 +1,0 @@
-
-dbusinessLogic.BLFacadeImplementation#getBaloratuGabekoErreserbak(Ldomain/Bidaiaria;)Ljava/util/List;C
-7src\main\java\businessLogic\BLFacadeImplementation.javaù ù(3"startingBlock*˛
-startingBlock
-ù3 ù(@Ä
-~
-
-ú ú(
-%1"
-__annotate*)
-
-__unknown_file (
-	WebMethod*3
-
-__unknown_file (
-
-bdomain.BidaiariaW
-U
-
-ù> ù(?
-bdomain.Bidaiaria"__annotation*"
-
-__unknown_file (
-
-%1*
-1*ñ
-1
-û	 û(o
-m
-
-û	 û(
-%0"__id*S
-
-__unknown_file (7*5&
-$businessLogic.BLFacadeImplementation"
-	dbManager"
-
-û û(2
-"":#
-
-ù4 ù(?
-bdomain.BidaiariaB(&
-$businessLogic.BLFacadeImplementationH

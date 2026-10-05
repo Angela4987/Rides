@@ -1,97 +1,0 @@
-
-ÖbusinessLogic.BLFacadeImplementation#getThisMonthDatesWithRides(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;)Ljava/util/List;A
-7src\main\java\businessLogic\BLFacadeImplementation.javal l(-"startingBlock*∞
-startingBlockl- l(PÅ
-
-k k(
-%3"
-__annotate*)
-
-__unknown_file (
-	WebMethod*6
-
-__unknown_file (
-
-fromjava.lang.StringX
-V
-l5 l(9
-fromjava.lang.String"__annotation*"
-
-__unknown_file (
-
-%3
-}
-k k(
-%4"
-__annotate*)
-
-__unknown_file (
-	WebMethod*4
-
-__unknown_file (
-
-tojava.lang.StringV
-T
-lB l(D
-tojava.lang.String"__annotation*"
-
-__unknown_file (
-
-%4
-}
-k k(
-%5"
-__annotate*)
-
-__unknown_file (
-	WebMethod*4
-
-__unknown_file (
-
-datejava.util.DateV
-T
-lK l(O
-datejava.util.Date"__annotation*"
-
-__unknown_file (
-
-%5*
-1*“
-1m m(m
-k
-m m(
-%0"__id*S
-
-__unknown_file (7*5&
-$businessLogic.BLFacadeImplementation"
-	dbManagerm
-k
-n n(
-%1"__id*S
-
-__unknown_file (7*5&
-$businessLogic.BLFacadeImplementation"
-	dbManagerO
-M
-n n(I
-datesjava.util.List"__id*"
-
-__unknown_file (
-""m
-k
-o o(
-%2"__id*S
-
-__unknown_file (7*5&
-$businessLogic.BLFacadeImplementation"
-	dbManager"%
-p p(
-
-datesjava.util.List:$
-l. l(:
-fromjava.lang.String:"
-l; l(E
-tojava.lang.String:"
-lF l(O
-datejava.util.DateB(&
-$businessLogic.BLFacadeImplementationH

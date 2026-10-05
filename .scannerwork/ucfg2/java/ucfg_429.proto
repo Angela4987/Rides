@@ -1,10 +1,10 @@
 
 -dataaccess.DataAccess#getRide(I)Ldomain/Ride;4
-(src\main\java\dataaccess\DataAccess.java• •("1*Î
+(src\main\java\dataaccess\DataAccess.java– –("1*Î
 1
-– –(xv
+— —(xv
 
-– –(
+— —(
 
 %0void"dataaccess.DataAccess#open()V*5
 
@@ -12,7 +12,7 @@
 dataaccess.DataAccess2open()Y
 W
 
-— —(
+˜ ˜(
 %1"__id*=
 
 __unknown_file (!*
@@ -20,23 +20,23 @@ W
 dbJ
 H
 
-— —(-
+˜ ˜(-
 rdomain.Ride"__id*"
 
 __unknown_file (
 ""zx
 
-˜ ˜(	
+™ ™(	
 
 %2void"dataaccess.DataAccess#close()V*5
 
 __unknown_file (
 dataaccess.DataAccess2close()" 
 
-™ ™(
+š š(
 
 rdomain.Ride:!
 
-• •(%
+– –(%
 bidaiZenbakiintB
 dataaccess.DataAccessH

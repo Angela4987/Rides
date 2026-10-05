@@ -1,6 +1,7 @@
 package businessLogic;
 import java.util.Date;
 import java.util.List;
+import java.util.logging.Logger;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;
@@ -9,7 +10,6 @@ import configuration.ConfigXML;
 import dataaccess.DataAccess;
 import domain.Ride;
 import domain.User;
-import domain.Admin;
 import domain.Alerta;
 import domain.Balorazioa;
 import domain.Bidaiaria;
@@ -28,20 +28,20 @@ import exceptions.RideAlreadyExistException;
 /**
  * It implements the business logic as a web service.
  */
+
 @WebService(endpointInterface = "businessLogic.BLFacade")
 public class BLFacadeImplementation  implements BLFacade {
 	DataAccess dbManager;
+	private static final Logger LOGGER = Logger.getLogger(BLFacadeImplementation.class.getName());
 
 	public BLFacadeImplementation()  {		
-		System.out.println("Creating BLFacadeImplementation instance");
+		LOGGER.info("Creating BLFacadeImplementation instance");
 
 
 		dbManager=new DataAccess();
 
-		//dbManager.close();
-
-
 	}
+	
 
 	public BLFacadeImplementation(DataAccess da)  {
 
@@ -141,22 +141,22 @@ public class BLFacadeImplementation  implements BLFacade {
 	public boolean saioaHasi(String email, String pasahitza) {
 		return dbManager.saioaHasi(email, pasahitza);
 	}
-
+	/*
 	@WebMethod 
 	public boolean saioaHasiAdmin(String email, String pasahitza) {  // GEHITU
 		return dbManager.saioaHasiAdmin(email, pasahitza);
 	}
-
+*/
 	@WebMethod 
 	public User erabiltzaileaBilatu(String email) {
 		return dbManager.erabiltzaileaBilatu(email);
 	}
-	
+	/*
 	@WebMethod 
 	public Admin erabiltzaileaBilatuAdmin(String email) {  // GEHITU
 		return dbManager.erabiltzaileaBilatuAdmin(email);
 	}
-
+*/
 	@WebMethod 
 	public void diruaSartu(float dirua, Bidaiaria t) {
 		dbManager.diruaSartu(dirua,t);
@@ -304,13 +304,13 @@ public class BLFacadeImplementation  implements BLFacade {
 	public List<Erreklamazioa> erreklamazioaErakutsiBidaiari(Bidaiaria b) {
 		return dbManager.erreklamazioaErakutsiBidaiari(b);
 	}
-
+/*
 	// GEHITU
 	@WebMethod
 	public List<Erreklamazioa> erreklamazioaErakutsiAdmin(Admin a) {
 		return dbManager.erreklamazioaErakutsiAdmin(a);
 	}
-
+*/
 
 	// GEHITU
 	@WebMethod
@@ -330,13 +330,13 @@ public class BLFacadeImplementation  implements BLFacade {
 	public Erreklamazioa erreklamazioaLortu(int errekzbk) { 
 		return dbManager.erreklamazioaLortu(errekzbk);
 	}
-
+/*
 	// GEHITU
 	@WebMethod
 	public void egoeraEzarriAdmin(int errekzbk, String egoera, Admin a) { 
 		dbManager.egoeraEzarriAdmin(errekzbk,egoera,a.getEmail());
 	}
-
+*/
 	// GEHITU
 	@WebMethod
 	public void egoeraEzarri(int errekzbk, String egoera)throws erreklamazioaEbatzitaException {

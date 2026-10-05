@@ -1,66 +1,0 @@
-
-ZbusinessLogic.BLFacadeImplementation#saioaHasiAdmin(Ljava/lang/String;Ljava/lang/String;)ZC
-7src\main\java\businessLogic\BLFacadeImplementation.javaë ë("startingBlock*Ù
-startingBlock
-ë ë(>Ö
-Ç
-
-ê ê(
-%1"
-__annotate*)
-
-__unknown_file (
-	WebMethod*7
-
-__unknown_file (
-
-emailjava.lang.String[
-Y
-
-ë& ë(+
-emailjava.lang.String"__annotation*"
-
-__unknown_file (
-
-%1â
-Ü
-
-ê ê(
-%2"
-__annotate*)
-
-__unknown_file (
-	WebMethod*;
-
-__unknown_file (
-
-	pasahitzajava.lang.String_
-]
-
-ë4 ë(=
-	pasahitzajava.lang.String"__annotation*"
-
-__unknown_file (
-
-%2*
-1*ñ
-1
-í	 í(o
-m
-
-í	 í(
-%0"__id*S
-
-__unknown_file (7*5&
-$businessLogic.BLFacadeImplementation"
-	dbManager"
-
-í í(4
-"":'
-
-ë ë(,
-emailjava.lang.String:+
-
-ë- ë(=
-	pasahitzajava.lang.StringB(&
-$businessLogic.BLFacadeImplementationHX

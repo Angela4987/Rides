@@ -1,42 +1,0 @@
-
-domain.User#%field_initializer(
-src\main\java\domain\User.java ("1*Í
-1
-__unknown_file (64
-#* #(<
-%0java.util.Vector"java.util.Vectord
-b
-#& #(>
-%1"java.util.Vector#<init>()V*4
-
-__unknown_file (
-
-%0java.util.Vectorh
-f
-! #(?
-domain.User"
-mugimenduak"__id*4
-
-__unknown_file (
-
-%0java.util.Vector64
-'* '(<
-%2java.util.Vector"java.util.Vectord
-b
-'& '(>
-%3"java.util.Vector#<init>()V*4
-
-__unknown_file (
-
-%2java.util.Vectorh
-f
-% '(?
-domain.User"
-balorazioak"__id*4
-
-__unknown_file (
-
-%2java.util.Vector"
- ¯(
-implicit returnB
-domain.User

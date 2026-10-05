@@ -1,11 +1,11 @@
 
 TbusinessLogic.BLFacadeImplementation#alertaIkusi(Ldomain/Bidaiaria;)Ljava/util/List;C
-7src\main\java\businessLogic\BLFacadeImplementation.java¤ ¤( "startingBlock*þ
+7src\main\java\businessLogic\BLFacadeImplementation.java£ £( "startingBlock*þ
 startingBlock
-¤  ¤(-€
+£  £(-€
 ~
 
-£ £(
+¢ ¢(
 %1"
 __annotate*)
 
@@ -17,7 +17,7 @@ __annotate*)
 bdomain.BidaiariaW
 U
 
-¤+ ¤(,
+£+ £(,
 bdomain.Bidaiaria"__annotation*"
 
 __unknown_file (
@@ -25,19 +25,19 @@ U
 %1*
 1*–
 1
-¥	 ¥(o
+¤	 ¤(o
 m
 
-¥	 ¥(
+¤	 ¤(
 %0"__id*S
 
 __unknown_file (7*5&
 $businessLogic.BLFacadeImplementation"
 	dbManager"
 
-¥ ¥("
+¤ ¤("
 "":#
 
-¤! ¤(,
+£! £(,
 bdomain.BidaiariaB(&
 $businessLogic.BLFacadeImplementationH

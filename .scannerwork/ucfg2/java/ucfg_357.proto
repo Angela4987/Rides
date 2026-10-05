@@ -1,11 +1,11 @@
 
 bbusinessLogic.BLFacadeImplementation#getBidaiariarenErreserbak(Ldomain/Bidaiaria;)Ljava/util/List;C
-7src\main\java\businessLogic\BLFacadeImplementation.javaÏ Ï(1"startingBlock*þ
+7src\main\java\businessLogic\BLFacadeImplementation.javaÎ Î(1"startingBlock*þ
 startingBlock
-Ï1 Ï(>€
+Î1 Î(>€
 ~
 
-Î Î(
+Í Í(
 %1"
 __annotate*)
 
@@ -17,7 +17,7 @@ __annotate*)
 bdomain.BidaiariaW
 U
 
-Ï< Ï(=
+Î< Î(=
 bdomain.Bidaiaria"__annotation*"
 
 __unknown_file (
@@ -25,19 +25,19 @@ U
 %1*
 1*–
 1
-Ð	 Ð(o
+Ï	 Ï(o
 m
 
-Ð	 Ð(
+Ï	 Ï(
 %0"__id*S
 
 __unknown_file (7*5&
 $businessLogic.BLFacadeImplementation"
 	dbManager"
 
-Ð Ð(0
+Ï Ï(0
 "":#
 
-Ï2 Ï(=
+Î2 Î(=
 bdomain.BidaiariaB(&
 $businessLogic.BLFacadeImplementationH
