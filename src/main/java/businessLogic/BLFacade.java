@@ -13,7 +13,6 @@ import domain.Bidaiaria;
 import domain.Driver;
 import domain.Erreklamazioa;
 import domain.Erreserba;
-import domain.Kotxea;
 import domain.Mezua;
 import domain.Mugimendua;
 import exceptions.RideMustBeLaterThanTodayException;
@@ -93,7 +92,7 @@ public interface BLFacade  {
 
 	@WebMethod public boolean saioaHasi(String email, String pasahitza);
 	
-	@WebMethod public boolean saioaHasiAdmin(String email, String pasahitza); // GEHITU
+//	@WebMethod public boolean saioaHasiAdmin(String email, String pasahitza); // GEHITU
 	
 	@WebMethod public User erabiltzaileaBilatu(String email);
 	
@@ -113,13 +112,9 @@ public interface BLFacade  {
 	
 	@WebMethod public void erreserbaBaieztatu(int erreserbaZenbaki);	
 	
-	@WebMethod public Kotxea kotxeGehitu(String matrikula, int eserleku, String marka, Driver gidari) throws KotxeaAlreadyExistException;//ZUZENDU	
+//	@WebMethod public int getnPlaces(String matrikula);		
 	
-	@WebMethod public int getnPlaces(String matrikula);		
-	
-	@WebMethod public List<Erreserba> getBidaiariarenErreserbak(Bidaiaria b);		
-	
-	@WebMethod public List<Kotxea> kotxeakEskuratu(Driver d);		
+	@WebMethod public List<Erreserba> getBidaiariarenErreserbak(Bidaiaria b);			
 	
 	// @WebMethod public boolean kotxeaExistitu(String matrikula);		KENDU
 	

@@ -16,7 +16,7 @@ import domain.Bidaiaria;
 import domain.Driver;
 import domain.Erreklamazioa;
 import domain.Erreserba;
-import domain.Kotxea;
+//import domain.Kotxea;
 import domain.Mezua;
 import domain.Mugimendua;
 import exceptions.RideMustBeLaterThanTodayException;
@@ -193,25 +193,25 @@ public class BLFacadeImplementation  implements BLFacade {
 	}
 
 	// ZUZENDU
-	@WebMethod
-	public Kotxea kotxeGehitu(String matrikula, int eserleku, String marka, Driver gidari) throws KotxeaAlreadyExistException {
-		return dbManager.kotxeGehitu(matrikula,eserleku,marka,gidari);
-	}
-	
-	@WebMethod
-	public int getnPlaces(String matrikula) {
-		return dbManager.getnPlaces(matrikula);
-	}
+//	@WebMethod
+//	public Kotxea kotxeGehitu(String matrikula, int eserleku, String marka, Driver gidari) throws KotxeaAlreadyExistException {
+//		return dbManager.kotxeGehitu(matrikula,eserleku,marka,gidari);
+//	}
+//	
+//	@WebMethod
+//	public int getnPlaces(String matrikula) {
+//		return dbManager.getnPlaces(matrikula);
+//	}
 
 	@WebMethod
 	public List<Erreserba> getBidaiariarenErreserbak(Bidaiaria b) {
 		return dbManager.getBidaiariarenErreserbak(b);
 	}
 
-	@WebMethod
-	public List<Kotxea> kotxeakEskuratu(Driver d) {
-		return dbManager.kotxeakEskuratu(d);
-	}
+//	@WebMethod
+//	public List<Kotxea> kotxeakEskuratu(Driver d) {
+//		return dbManager.kotxeakEskuratu(d);
+//	}
 
 	// KENDU
 	//	@WebMethod
