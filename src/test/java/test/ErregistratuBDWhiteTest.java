@@ -8,6 +8,7 @@ import java.util.Date;
 import org.junit.Test;
 
 import dataaccess.DataAccess;
+import dataaccess.ErregistratuParameter;
 import testOperations.TestDataAccess;
 
 public class ErregistratuBDWhiteTest {
@@ -39,13 +40,7 @@ public class ErregistratuBDWhiteTest {
             sut.open();
 
             boolean emaitza = sut.erregistratu(
-                    "Aitor",
-                    "Fernandez",
-                    jaiotzeData,
-                    "G",
-                    "Gidaria",
-                    email,
-                    "12345"
+                    new ErregistratuParameter("Aitor", "Fernandez", jaiotzeData, "G", "Gidaria", email, "12345")
             );
 
             sut.close();
@@ -85,13 +80,7 @@ public class ErregistratuBDWhiteTest {
 
 
             boolean emaitza = sut.erregistratu(
-            		"Sara",
-            		"Alvarez",
-            		jaiotzeData,
-            		"E",
-            		"Gidaria",
-            		email,
-            		"123456");
+            		new ErregistratuParameter("Sara", "Alvarez", jaiotzeData, "E", "Gidaria", email, "123456"));
 
 
             assertTrue(emaitza);
@@ -128,13 +117,7 @@ public class ErregistratuBDWhiteTest {
             sut.open();
 
             boolean emaitza = sut.erregistratu(
-                    "Magdalena",
-                    "Sevilla",
-                    jaiotzeData,
-                    "E",
-                    "Bidaiaria",
-                    email,
-                    "12345"
+                    new ErregistratuParameter("Magdalena", "Sevilla", jaiotzeData, "E", "Bidaiaria", email, "12345")
             );
 
             sut.close();
@@ -166,13 +149,7 @@ public class ErregistratuBDWhiteTest {
 
        
             boolean emaitza = sut.erregistratu(
-                    "Sara",
-                    "Alvarez",
-                    jaiotzeData,
-                    "E",
-                    "Bidaiaria",
-                    email,
-                    "123456"
+                    new ErregistratuParameter("Sara", "Alvarez", jaiotzeData, "E", "Bidaiaria", email, "123456")
             );
 
        

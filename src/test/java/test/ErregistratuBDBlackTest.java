@@ -8,7 +8,8 @@
 	import org.junit.Test;
 
 	import dataaccess.DataAccess;
-	import testOperations.TestDataAccess;
+import dataaccess.ErregistratuParameter;
+import testOperations.TestDataAccess;
 
 
 public class ErregistratuBDBlackTest {
@@ -24,13 +25,7 @@ public class ErregistratuBDBlackTest {
 	        Date d = new SimpleDateFormat("dd/MM/yyyy").parse("20/11/2003");
 
 	        boolean result = sut.erregistratu(
-	                "Aitor",
-	                "Fernandez",
-	                d,
-	                "Gizona",
-	                "Gidaria",
-	                "driver1@gmail.com",
-	                "12345");
+	                new ErregistratuParameter("Aitor", "Fernandez", d, "Gizona", "Gidaria", "driver1@gmail.com", "12345"));
 
 	        assertFalse(result);
 	    }
@@ -46,13 +41,7 @@ public class ErregistratuBDBlackTest {
 	        testDA.close();
 
 	        boolean result = sut.erregistratu(
-	                "Sara",
-	                "Alvarez",
-	                d,
-	                "Emakumea",
-	                "Gidaria",
-	                "salvarez@gmail.com",
-	                "123456");
+	                new ErregistratuParameter("Sara", "Alvarez", d, "Emakumea", "Gidaria", "salvarez@gmail.com", "123456"));
 
 	        assertTrue(result);
 	    }
@@ -63,13 +52,7 @@ public class ErregistratuBDBlackTest {
 	        Date d = new SimpleDateFormat("dd/MM/yyyy").parse("14/03/2000");
 
 	        boolean result = sut.erregistratu(
-	                "Magdalena",
-	                "Sevillano",
-	                d,
-	                "Emakumea",
-	                "Bidaiari",
-	                "bidaiari@gmail.com",
-	                "12345");
+	                new ErregistratuParameter("Magdalena", "Sevillano", d, "Emakumea", "Bidaiari", "bidaiari@gmail.com", "12345"));
 
 	        assertFalse(result);
 	    }
@@ -85,13 +68,7 @@ public class ErregistratuBDBlackTest {
 	        testDA.close();
 
 	        boolean result = sut.erregistratu(
-	                "Sara",
-	                "Alvarez",
-	                d,
-	                "Emakumea",
-	                "Bidaiari",
-	                "salvarez@gmail.com",
-	                "123456");
+	                new ErregistratuParameter("Sara", "Alvarez", d, "Emakumea", "Bidaiari", "salvarez@gmail.com", "123456"));
 
 	        assertTrue(result);
 	    }
@@ -102,13 +79,7 @@ public class ErregistratuBDBlackTest {
 	            Date d = new SimpleDateFormat("dd/MM/yyyy").parse("20/11/2003");
 
 	            sut.erregistratu(
-	                    null,
-	                    "Fernandez",
-	                    d,
-	                    "Gizona",
-	                    "Gidaria",
-	                    "driver1@gmail.com",
-	                    "12345");
+	                    new ErregistratuParameter(null, "Fernandez", d, "Gizona", "Gidaria", "driver1@gmail.com", "12345"));
 
 	            fail();
 	        } catch (Exception e) {
@@ -122,13 +93,7 @@ public class ErregistratuBDBlackTest {
 	            Date d = new SimpleDateFormat("dd/MM/yyyy").parse("20/11/2003");
 
 	            sut.erregistratu(
-	                    "Aitor",
-	                    null,
-	                    d,
-	                    "Gizona",
-	                    "Gidaria",
-	                    "driver1@gmail.com",
-	                    "12345");
+	                    new ErregistratuParameter("Aitor", null, d, "Gizona", "Gidaria", "driver1@gmail.com", "12345"));
 
 	            fail();
 	        } catch (Exception e) {
@@ -141,13 +106,7 @@ public class ErregistratuBDBlackTest {
 	        try {
 
 	            sut.erregistratu(
-	                    "Aitor",
-	                    "Fernandez",
-	                    null,
-	                    "Gizona",
-	                    "Gidaria",
-	                    "driver1@gmail.com",
-	                    "12345");
+	                    new ErregistratuParameter("Aitor", "Fernandez", null, "Gizona", "Gidaria", "driver1@gmail.com", "12345"));
 
 	            fail();
 	        } catch (Exception e) {
@@ -161,13 +120,7 @@ public class ErregistratuBDBlackTest {
 	            Date d = new SimpleDateFormat("dd/MM/yyyy").parse("20/11/2003");
 
 	            sut.erregistratu(
-	                    "Aitor",
-	                    "Fernandez",
-	                    d,
-	                    null,
-	                    "Gidaria",
-	                    "driver1@gmail.com",
-	                    "12345");
+	                    new ErregistratuParameter("Aitor", "Fernandez", d, null, "Gidaria", "driver1@gmail.com", "12345"));
 
 	            fail();
 	        } catch (Exception e) {
@@ -181,13 +134,7 @@ public class ErregistratuBDBlackTest {
 	            Date d = new SimpleDateFormat("dd/MM/yyyy").parse("20/11/2003");
 
 	            sut.erregistratu(
-	                    "Aitor",
-	                    "Fernandez",
-	                    d,
-	                    "Gizona",
-	                    null,
-	                    "driver1@gmail.com",
-	                    "12345");
+	                    new ErregistratuParameter("Aitor", "Fernandez", d, "Gizona", null, "driver1@gmail.com", "12345"));
 
 	            fail();
 	        } catch (Exception e) {
@@ -201,13 +148,7 @@ public class ErregistratuBDBlackTest {
 	            Date d = new SimpleDateFormat("dd/MM/yyyy").parse("20/11/2003");
 
 	            sut.erregistratu(
-	                    "Aitor",
-	                    "Fernandez",
-	                    d,
-	                    "Gizona",
-	                    "Gidaria",
-	                    null,
-	                    "12345");
+	                    new ErregistratuParameter("Aitor", "Fernandez", d, "Gizona", "Gidaria", null, "12345"));
 
 	            fail();
 	        } catch (Exception e) {
@@ -221,13 +162,7 @@ public class ErregistratuBDBlackTest {
 	            Date d = new SimpleDateFormat("dd/MM/yyyy").parse("20/11/2003");
 
 	            sut.erregistratu(
-	                    "Aitor",
-	                    "Fernandez",
-	                    d,
-	                    "Gizona",
-	                    "Gidaria",
-	                    "driver1@gmail.com",
-	                    null);
+	                    new ErregistratuParameter("Aitor", "Fernandez", d, "Gizona", "Gidaria", "driver1@gmail.com", null));
 
 	            fail();
 	        } catch (Exception e) {
@@ -241,13 +176,7 @@ public class ErregistratuBDBlackTest {
 	            Date d = new SimpleDateFormat("dd/MM/yyyy").parse("20/11/2003");
 
 	            sut.erregistratu(
-	                    "23548",
-	                    "Fernandez",
-	                    d,
-	                    "Gizona",
-	                    "Gidaria",
-	                    "driver1@gmail.com",
-	                    "12345");
+	                    new ErregistratuParameter("23548", "Fernandez", d, "Gizona", "Gidaria", "driver1@gmail.com", "12345"));
 
 	            fail();
 	        } catch (Exception e) {
@@ -261,13 +190,7 @@ public class ErregistratuBDBlackTest {
 	            Date d = new SimpleDateFormat("dd/MM/yyyy").parse("20/11/2003");
 
 	            sut.erregistratu(
-	                    "Aitor",
-	                    "5624",
-	                    d,
-	                    "Gizona",
-	                    "Gidaria",
-	                    "driver1@gmail.com",
-	                    "12345");
+	                    new ErregistratuParameter("Aitor", "5624", d, "Gizona", "Gidaria", "driver1@gmail.com", "12345"));
 
 	            fail();
 	        } catch (Exception e) {
@@ -290,13 +213,7 @@ public class ErregistratuBDBlackTest {
 	            Date d = new SimpleDateFormat("dd/MM/yyyy").parse("20/11/2003");
 
 	            sut.erregistratu(
-	                    "Aitor",
-	                    "Fernandez",
-	                    d,
-	                    "Elefantea",
-	                    "Gidaria",
-	                    "driver1@gmail.com",
-	                    "12345");
+	                    new ErregistratuParameter("Aitor", "Fernandez", d, "Elefantea", "Gidaria", "driver1@gmail.com", "12345"));
 
 	            fail();
 	        } catch (Exception e) {
@@ -310,13 +227,7 @@ public class ErregistratuBDBlackTest {
 	            Date d = new SimpleDateFormat("dd/MM/yyyy").parse("20/11/2003");
 
 	            sut.erregistratu(
-	                    "Aitor",
-	                    "Fernandez",
-	                    d,
-	                    "Gizona",
-	                    "Polizia",
-	                    "driver1@gmail.com",
-	                    "12345");
+	                    new ErregistratuParameter("Aitor", "Fernandez", d, "Gizona", "Polizia", "driver1@gmail.com", "12345"));
 
 	            fail();
 	        } catch (Exception e) {
@@ -330,13 +241,7 @@ public class ErregistratuBDBlackTest {
 	            Date d = new SimpleDateFormat("dd/MM/yyyy").parse("20/11/2003");
 
 	            sut.erregistratu(
-	                    "Aitor",
-	                    "Fernandez",
-	                    d,
-	                    "Gizona",
-	                    "Gidaria",
-	                    "driver1",
-	                    "12345");
+	                    new ErregistratuParameter("Aitor", "Fernandez", d, "Gizona", "Gidaria", "driver1", "12345"));
 
 	            fail();
 	        } catch (Exception e) {

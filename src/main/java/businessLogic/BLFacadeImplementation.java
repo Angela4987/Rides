@@ -8,6 +8,7 @@ import javax.jws.WebService;
 
 import configuration.ConfigXML;
 import dataaccess.DataAccess;
+import dataaccess.ErregistratuParameter;
 import domain.Ride;
 import domain.User;
 import domain.Alerta;
@@ -134,7 +135,7 @@ public class BLFacadeImplementation  implements BLFacade {
 
 	@WebMethod 
 	public boolean erregistratu(String izena, String abizena, Date jaiotzeData, String sexua, String erabiltzaileMota, String email, String pasahitza) {
-		return dbManager.erregistratu(izena, abizena, jaiotzeData, sexua, erabiltzaileMota, email, pasahitza);
+		return dbManager.erregistratu(new ErregistratuParameter(izena, abizena, jaiotzeData, sexua, erabiltzaileMota, email, pasahitza));
 	}
 
 	@WebMethod 

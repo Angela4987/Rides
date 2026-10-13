@@ -21,6 +21,7 @@ import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
 import dataaccess.DataAccess;
+import dataaccess.ErregistratuParameter;
 import domain.Bidaiaria;
 import domain.Driver;
 
@@ -83,13 +84,7 @@ public class ErregistratuMockBlackTest {
 	                .thenReturn(driver);
 
 	        boolean result = sut.erregistratu(
-	                "Aitor",
-	                "Fernandez",
-	                d,
-	                "Gizona",
-	                "Gidaria",
-	                "driver1@gmail.com",
-	                "12345");
+	                new ErregistratuParameter("Aitor", "Fernandez", d, "Gizona", "Gidaria", "driver1@gmail.com", "12345"));
 
 	        assertFalse(result);
 
@@ -112,13 +107,7 @@ public class ErregistratuMockBlackTest {
 	                .thenReturn(null);
 
 	        boolean result = sut.erregistratu(
-	                "Sara",
-	                "Alvarez",
-	                d,
-	                "Emakumea",
-	                "Gidaria",
-	                "salvarez@gmail.com",
-	                "123456");
+	                new ErregistratuParameter("Sara", "Alvarez", d, "Emakumea", "Gidaria", "salvarez@gmail.com", "123456"));
 
 	        assertTrue(result);
 
@@ -153,13 +142,7 @@ public class ErregistratuMockBlackTest {
 	                .thenReturn(b);
 
 	        boolean result = sut.erregistratu(
-	                "Magdalena",
-	                "Sevillano",
-	                d,
-	                "Emakumea",
-	                "Bidaiari",
-	                "bidaiari@gmail.com",
-	                "12345");
+	                new ErregistratuParameter("Magdalena", "Sevillano", d, "Emakumea", "Bidaiari", "bidaiari@gmail.com", "12345"));
 
 	        assertFalse(result);
 
@@ -182,13 +165,7 @@ public class ErregistratuMockBlackTest {
 	                .thenReturn(null);
 
 	        boolean result = sut.erregistratu(
-	                "Sara",
-	                "Alvarez",
-	                d,
-	                "Emakumea",
-	                "Bidaiari",
-	                "salvarez@gmail.com",
-	                "123456");
+	                new ErregistratuParameter("Sara", "Alvarez", d, "Emakumea", "Bidaiari", "salvarez@gmail.com", "123456"));
 
 	        assertTrue(result);
 
@@ -209,13 +186,7 @@ public class ErregistratuMockBlackTest {
 	                .parse("20/11/2003");
 
 	        sut.erregistratu(
-	                null,
-	                "Fernandez",
-	                d,
-	                "Gizona",
-	                "Gidaria",
-	                "driver1@gmail.com",
-	                "12345");
+	                new ErregistratuParameter(null, "Fernandez", d, "Gizona", "Gidaria", "driver1@gmail.com", "12345"));
 
 	        fail();
 
@@ -233,13 +204,7 @@ public class ErregistratuMockBlackTest {
 	                .parse("20/11/2003");
 
 	        sut.erregistratu(
-	                "Aitor",
-	                null,
-	                d,
-	                "Gizona",
-	                "Gidaria",
-	                "driver1@gmail.com",
-	                "12345");
+	                new ErregistratuParameter("Aitor", null, d, "Gizona", "Gidaria", "driver1@gmail.com", "12345"));
 
 	        fail();
 
@@ -254,13 +219,7 @@ public class ErregistratuMockBlackTest {
 	    try {
 
 	        sut.erregistratu(
-	                "Aitor",
-	                "Fernandez",
-	                null,
-	                "Gizona",
-	                "Gidaria",
-	                "driver1@gmail.com",
-	                "12345");
+	                new ErregistratuParameter("Aitor", "Fernandez", null, "Gizona", "Gidaria", "driver1@gmail.com", "12345"));
 
 	        fail();
 
@@ -278,13 +237,7 @@ public class ErregistratuMockBlackTest {
 	                .parse("20/11/2003");
 
 	        sut.erregistratu(
-	                "Aitor",
-	                "Fernandez",
-	                d,
-	                null,
-	                "Gidaria",
-	                "driver1@gmail.com",
-	                "12345");
+	                new ErregistratuParameter("Aitor", "Fernandez", d, null, "Gidaria", "driver1@gmail.com", "12345"));
 
 	        fail();
 
@@ -302,13 +255,7 @@ public class ErregistratuMockBlackTest {
 	                .parse("20/11/2003");
 
 	        sut.erregistratu(
-	                "Aitor",
-	                "Fernandez",
-	                d,
-	                "Gizona",
-	                null,
-	                "driver1@gmail.com",
-	                "12345");
+	                new ErregistratuParameter("Aitor", "Fernandez", d, "Gizona", null, "driver1@gmail.com", "12345"));
 
 	        fail();
 
@@ -330,13 +277,7 @@ public class ErregistratuMockBlackTest {
 	                .parse("20/11/2003");
 
 	        sut.erregistratu(
-	                "Aitor",
-	                "Fernandez",
-	                d,
-	                "Gizona",
-	                "Gidaria",
-	                null,
-	                "12345");
+	                new ErregistratuParameter("Aitor", "Fernandez", d, "Gizona", "Gidaria", null, "12345"));
 
 	        fail();
 
@@ -354,13 +295,7 @@ public class ErregistratuMockBlackTest {
 	                .parse("20/11/2003");
 
 	        sut.erregistratu(
-	                "Aitor",
-	                "Fernandez",
-	                d,
-	                "Gizona",
-	                "Gidaria",
-	                "driver1@gmail.com",
-	                null);
+	                new ErregistratuParameter("Aitor", "Fernandez", d, "Gizona", "Gidaria", "driver1@gmail.com", null));
 
 	        fail();
 
@@ -378,13 +313,7 @@ public class ErregistratuMockBlackTest {
 	                .parse("20/11/2003");
 
 	        sut.erregistratu(
-	                "23548",
-	                "Fernandez",
-	                d,
-	                "Gizona",
-	                "Gidaria",
-	                "driver1@gmail.com",
-	                "12345");
+	                new ErregistratuParameter("23548", "Fernandez", d, "Gizona", "Gidaria", "driver1@gmail.com", "12345"));
 
 	        fail();
 
@@ -402,13 +331,7 @@ public class ErregistratuMockBlackTest {
 	                .parse("20/11/2003");
 
 	        sut.erregistratu(
-	                "Aitor",
-	                "5624",
-	                d,
-	                "Gizona",
-	                "Gidaria",
-	                "driver1@gmail.com",
-	                "12345");
+	                new ErregistratuParameter("Aitor", "5624", d, "Gizona", "Gidaria", "driver1@gmail.com", "12345"));
 
 	        fail();
 
@@ -426,13 +349,7 @@ public class ErregistratuMockBlackTest {
 	                .parse("2003");
 
 	        sut.erregistratu(
-	                "Aitor",
-	                "Fernandez",
-	                d,
-	                "Gizona",
-	                "Gidaria",
-	                "driver1@gmail.com",
-	                "12345");
+	                new ErregistratuParameter("Aitor", "Fernandez", d, "Gizona", "Gidaria", "driver1@gmail.com", "12345"));
 
 	        fail();
 
@@ -450,13 +367,7 @@ public class ErregistratuMockBlackTest {
 	                .parse("20/11/2003");
 
 	        sut.erregistratu(
-	                "Aitor",
-	                "Fernandez",
-	                d,
-	                "Elefantea",
-	                "Gidaria",
-	                "driver1@gmail.com",
-	                "12345");
+	                new ErregistratuParameter("Aitor", "Fernandez", d, "Elefantea", "Gidaria", "driver1@gmail.com", "12345"));
 
 	        fail();
 
@@ -474,13 +385,7 @@ public class ErregistratuMockBlackTest {
 	                .parse("20/11/2003");
 
 	        sut.erregistratu(
-	                "Aitor",
-	                "Fernandez",
-	                d,
-	                "Gizona",
-	                "Polizia",
-	                "driver1@gmail.com",
-	                "12345");
+	                new ErregistratuParameter("Aitor", "Fernandez", d, "Gizona", "Polizia", "driver1@gmail.com", "12345"));
 
 	        fail();
 
@@ -498,13 +403,7 @@ public class ErregistratuMockBlackTest {
 	                .parse("20/11/2003");
 
 	        sut.erregistratu(
-	                "Aitor",
-	                "Fernandez",
-	                d,
-	                "Gizona",
-	                "Gidaria",
-	                "driver1",
-	                "12345");
+	                new ErregistratuParameter("Aitor", "Fernandez", d, "Gizona", "Gidaria", "driver1", "12345"));
 
 	        fail();
 

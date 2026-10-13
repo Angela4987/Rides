@@ -19,7 +19,8 @@
 	 import org.mockito.MockitoAnnotations;
 
 	 import dataaccess.DataAccess;
-	 import domain.Bidaiaria;
+import dataaccess.ErregistratuParameter;
+import domain.Bidaiaria;
 	 import domain.Driver;
 
 
@@ -84,13 +85,7 @@
 	                     .thenReturn(driver);
 
 	             boolean result = sut.erregistratu(
-	                     "Aitor",
-	                     "Fernandez",
-	                     d,
-	                     "Gizona",
-	                     "Gidaria",
-	                     "driver1@gmail.com",
-	                     "12345");
+	                     new ErregistratuParameter("Aitor", "Fernandez", d, "Gizona", "Gidaria", "driver1@gmail.com", "12345"));
 
 	             assertFalse(result);
 
@@ -115,13 +110,7 @@
 	                     .thenReturn(null);
 
 	             boolean result = sut.erregistratu(
-	                     "Sara",
-	                     "Alvarez",
-	                     d,
-	                     "Emakumea",
-	                     "Gidaria",
-	                     "salvarez@gmail.com",
-	                     "123456");
+	                     new ErregistratuParameter("Sara", "Alvarez", d, "Emakumea", "Gidaria", "salvarez@gmail.com", "123456"));
 
 	             assertTrue(result);
 
@@ -159,13 +148,7 @@
 	                     .thenReturn(b);
 
 	             boolean result = sut.erregistratu(
-	                     "Magdalena",
-	                     "Sevillano",
-	                     d,
-	                     "Emakumea",
-	                     "Bidaiari",
-	                     "bidaiari@gmail.com",
-	                     "12345");
+	                     new ErregistratuParameter("Magdalena", "Sevillano", d, "Emakumea", "Bidaiari", "bidaiari@gmail.com", "12345"));
 
 	             assertFalse(result);
 
@@ -191,13 +174,7 @@
 	                     .thenReturn(null);
 
 	             boolean result = sut.erregistratu(
-	                     "Sara",
-	                     "Alvarez",
-	                     d,
-	                     "Emakumea",
-	                     "Bidaiari",
-	                     "salvarez@gmail.com",
-	                     "123456");
+	                     new ErregistratuParameter("Sara", "Alvarez", d, "Emakumea", "Bidaiari", "salvarez@gmail.com", "123456"));
 
 	             assertTrue(result);
 

@@ -314,35 +314,46 @@ public class DataAccess  {
 
 
 
-	public boolean erregistratu(String izena, String abizena, Date jaiotzeData, String sexua, String erabiltzaileMota, String email, String pasahitza) {
+	public boolean erregistratu(ErregistratuParameter parameterObject) {
 		open();
-		if(erabiltzaileMota.equals("Gidaria")) {
-			Driver u = db.find(Driver.class,email);
-			if (u==null) {
-				db.getTransaction().begin();
-				Driver d=new Driver(izena, abizena, jaiotzeData, sexua, email, pasahitza);
-				db.persist(d);
-				db.getTransaction().commit();
-				close();
-				return true;
-			} else {
-				return false;
-			}
+		if(parameterObject.erabiltzaileMota.equals("Gidaria")) {
+			return gordeGidaria(parameterObject);
+		}
+		return gordeBidaiaria(parameterObject);
+		
+	}
+
+	private boolean gordeBidaiaria(ErregistratuParameter parameterObject) {
+		Bidaiaria u = db.find(Bidaiaria.class,parameterObject.email);
+		if (u==null) {
+			Bidaiaria b=new Bidaiaria(parameterObject.izena, parameterObject.abizena,parameterObject.jaiotzeData, parameterObject.sexua, parameterObject.email, parameterObject.pasahitza);
+			persistitu(b);
+			close();
+			return true;
 		} else {
-			Bidaiaria u = db.find(Bidaiaria.class,email);
-			if (u==null) {
-				db.getTransaction().begin();
-				Bidaiaria b=new Bidaiaria(izena, abizena, jaiotzeData, sexua, email, pasahitza);
-				db.persist(b);
-				db.getTransaction().commit();
-				close();
-				return true;
-			} else {
-				return false;
-			}
+			return false;
 		}
 	}
 
+
+	private boolean gordeGidaria(ErregistratuParameter parameterObject) {
+		Driver u = db.find(Driver.class,parameterObject.email);
+		if (u==null) {
+			Driver d=new Driver(parameterObject.izena, parameterObject.abizena, parameterObject.jaiotzeData, parameterObject.sexua, parameterObject.email, parameterObject.pasahitza);
+			persistitu(d);
+			close();
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	private void persistitu(Object o) {
+		db.getTransaction().begin();
+		db.persist(o);
+		db.getTransaction().commit();
+	}
+	
 	public boolean saioaHasi(String email, String pasahitza) {
 		open();
 		User u = db.find(User.class,email);
