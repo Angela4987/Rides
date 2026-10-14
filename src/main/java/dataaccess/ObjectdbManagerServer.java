@@ -59,14 +59,7 @@ public class ObjectdbManagerServer extends JDialog {
 						textArea.append("\n\n\nClosing the database... ");
 					    try {
 					    	System.out.println("Server close");
-					    	 try {
-					    		    
-					    		    
-							    	Runtime.getRuntime().exec("java -cp "+objectDbpath+" com.objectdb.Server -port "+ c.getDatabasePort()+" stop");
-							    	
-							    } catch (Exception ioe) {
-							    	System.out.println (ioe);
-							    }
+					    	kudeatu("stop");
 								System.exit(1);
 							
 						} catch (Exception e1) {
@@ -85,7 +78,7 @@ public class ObjectdbManagerServer extends JDialog {
 			}
 		}
 		
-		ConfigXML c=ConfigXML.getInstance();
+		c=ConfigXML.getInstance();
 		
 		if (c.isDatabaseLocal()) {
 			textArea.append("\nERROR, the database is configured as local");
@@ -94,11 +87,8 @@ public class ObjectdbManagerServer extends JDialog {
 		try{
 			System.out.println("Lauching objectdb server");
 			
-			try {
-		    	Runtime.getRuntime().exec("java -cp "+objectDbpath+" com.objectdb.Server -port "+ c.getDatabasePort()+" start");
-		    } catch (Exception ioe) {
-		    	System.out.println (ioe);
-		    }
+			kudeatu("start");
+			
 		    textArea.append("\nAccess granted to: "+c.getUser());
 		    
 			textArea.append("\nPress button to exit this database server... ");
@@ -108,6 +98,14 @@ public class ObjectdbManagerServer extends JDialog {
 		}
 		
 		}
+	}
+	
+	private void kudeatu (String ekintza) {
+		 try {
+		        Runtime.getRuntime().exec("java -cp " + objectDbpath + " com.objectdb.Server -port " + c.getDatabasePort() + " " + ekintza);
+		    } catch (Exception ioe) {
+		        System.out.println(ioe);
+		    }
 	}
 }
 	

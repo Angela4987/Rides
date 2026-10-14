@@ -208,20 +208,20 @@ public class DataAccess  {
 	 * @throws RideMustBeLaterThanTodayException if the ride date is before today 
 	 * @throws RideAlreadyExistException if the same ride already exists for the driver
 	 */
-	public Ride createRide(String from, String to, Date date, int nPlaces, float price, String driverEmail) throws  RideAlreadyExistException, RideMustBeLaterThanTodayException {
-		System.out.println(">> DataAccess: createRide=> from= "+from+" to= "+to+" driver="+driverEmail+" date "+date);
+	public Ride createRide(createRideParameter obj, String driverEmail) throws  RideAlreadyExistException, RideMustBeLaterThanTodayException {
+		System.out.println(">> DataAccess: createRide=> from= "+obj.getFrom()+" to= "+obj.getTo()+" driver="+driverEmail+" date "+obj.getDate());
 		try {
-			if(new Date().compareTo(date)>0) {
+			if(new Date().compareTo(obj.getDate())>0) {
 				throw new RideMustBeLaterThanTodayException(ResourceBundle.getBundle("Etiquetas").getString("CreateRideGUI.ErrorRideMustBeLaterThanToday"));
 			}
 			db.getTransaction().begin();
 
 			Driver driver = db.find(Driver.class, driverEmail);
-			if (driver.doesRideExists(from, to, date)) {
+			if (driver.doesRideExists(obj.getFrom(), obj.getTo(), obj.getDate())) {
 				db.getTransaction().commit();
 				throw new RideAlreadyExistException(ResourceBundle.getBundle("Etiquetas").getString("DataAccess.RideAlreadyExist"));
 			}
-			Ride ride = driver.addRide(from, to, date, nPlaces, price);
+			Ride ride = driver.addRide(obj.getFrom(), obj.getTo(), obj.getDate(), obj.getNPlaces(), obj.getPrice());
 			//next instruction can be obviated
 			db.persist(driver); 
 			db.getTransaction().commit();
@@ -857,35 +857,37 @@ public class DataAccess  {
 		close();
 	}
 	*/
-	// GEHITU
-	public void egoeraEzarri(int errekzbk, String egoera) throws erreklamazioaEbatzitaException { 
-		open();
-		db.getTransaction().begin();
-		Erreklamazioa e = db.find(Erreklamazioa.class, errekzbk);
-		if(e.getEgoera().equals("itxaron")) {
-			e.setEgoera(egoera);
-			if(egoera.equals("onartu")) {
-				float diruIzoztua = e.getErreserbarenDiruIzoztua();
-				Bidaiaria b = e.getNork(); 
-				Driver d = e.getNori();
-				b.diruaGehitu(diruIzoztua);
-				b.addMugimendua("Dirua itzuli zaizu erreklamazioaren onarpenarengatik");
-				d.diruaKendu(diruIzoztua);
-				d.addMugimendua("Dirua kendu zaizu erreklamazioaren onarpenarengatik");		
-			}
-			else if(egoera.equals("deuseztatu")) {
-				/*TypedQuery<Admin> aquery = db.createQuery("SELECT a FROM Admin a", Admin.class);
-				Admin a = aquery.getResultList().get(0);
-				a.addErreklamazioa(e);*/
-				System.out.println("Egoera deuseztatu da.");
-			}
-		} else {
-			throw new erreklamazioaEbatzitaException();
-		}
-		db.getTransaction().commit();
-		close();
+	public void egoeraEzarri(int errekzbk, String egoera) throws erreklamazioaEbatzitaException {
+	    open();
+	    db.getTransaction().begin();
+	    Erreklamazioa e = db.find(Erreklamazioa.class, errekzbk);
+	    if (!e.getEgoera().equals("itxaron")) {
+	        throw new erreklamazioaEbatzitaException();
+	    }
+	    e.setEgoera(egoera);
+	    egoeraBerriaKudeatu(e, egoera);
+	    db.getTransaction().commit();
+	    close();
+	}
+	
+	private void egoeraBerriaKudeatu(Erreklamazioa e, String egoera) {
+	    if (egoera.equals("onartu")) {
+	        diruaItzuli(e);
+	    } else if (egoera.equals("deuseztatu")) {
+	        System.out.println("Egoera deuseztatu da.");
+	    }
 	}
 
+	private void diruaItzuli(Erreklamazioa e) {
+	    float diruIzoztua = e.getErreserbarenDiruIzoztua();
+	    Bidaiaria b = e.getNork();
+	    Driver d = e.getNori();
+	    b.diruaGehitu(diruIzoztua);
+	    b.addMugimendua("Dirua itzuli zaizu erreklamazioaren onarpenarengatik");
+	    d.diruaKendu(diruIzoztua);
+	    d.addMugimendua("Dirua kendu zaizu erreklamazioaren onarpenarengatik");
+	}
+	
 	// GEHITU
 	public void alertakEguneratu(Ride r) {
 		open();
