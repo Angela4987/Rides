@@ -24,6 +24,7 @@ import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
 import dataaccess.DataAccess;
+import dataaccess.createRideParameter;
 import domain.Driver;
 import domain.Ride;
 import exceptions.RideAlreadyExistException;
@@ -98,7 +99,7 @@ public class CreateRideMockTest {
 			
 			//invoke System Under Test (sut)  
 			sut.open();
-		    sut.createRide(rideFrom, rideTo, rideDate, 0, 0, driverEmail);
+		    sut.createRide(new createRideParameter(rideFrom, rideTo, rideDate, 0, 0), driverEmail);
 			sut.close();
 			
 			fail();
@@ -139,7 +140,7 @@ public class CreateRideMockTest {
 					
 			//invoke System Under Test (sut)  
 			sut.open();
-			Ride ride=sut.createRide(rideFrom, rideTo, rideDate, 0, 0, driverEmail);
+			Ride ride=sut.createRide(new createRideParameter(rideFrom, rideTo, rideDate, 0, 0), driverEmail);
 			sut.close();
 			//verify the results
 			assertNotNull(ride);
@@ -193,7 +194,7 @@ public class CreateRideMockTest {
 				
 				//invoke System Under Test (sut)  
 				sut.open();
-				Ride ride=sut.createRide(rideFrom, rideTo, rideDate, 0, 0, driverEmail);
+				Ride ride=sut.createRide(new createRideParameter(rideFrom, rideTo, rideDate, 0, 0), driverEmail);
 				System.out.println("ride "+ride);
 
 				//verify the results
@@ -247,7 +248,7 @@ public class CreateRideMockTest {
 			
 	        //invoke System Under Test (sut)  
 			sut.open();
-			 ride=sut.createRide(rideFrom, rideTo, rideDate, 0, 0, driverEmail);
+			 ride=sut.createRide(new createRideParameter(rideFrom, rideTo, rideDate, 0, 0), driverEmail);
 			sut.close();			
 			//verify the results
 			assertNull(ride);
