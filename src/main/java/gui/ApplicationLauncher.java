@@ -39,22 +39,20 @@ public class ApplicationLauncher {
                 "user@gmail.com",
                 "pasahitza");
 
-        MainGUI a = new MainGUI(driver, user);
-        a.setVisible(true);
+        //MainGUI a = new MainGUI(driver, user);
+        //a.setVisible(true);
 
         try {
 
             UIManager.setLookAndFeel("avax.swing.plaf.metal.MetalLookAndFeel");
-
             BLFacade appFacadeInterface =BLFacadeFactory.createBLFacade();
-
-            MainGUI.setBussinessLogic(appFacadeInterface);
+            //MainGUI.setBussinessLogic(appFacadeInterface);
 
         } catch (Exception e) {
 
-            a.jLabelSelectOption.setText("Error: " + e.toString());
+            //a.jLabelSelectOption.setText("Error: " + e.toString());
 
-            a.jLabelSelectOption.setForeground(Color.RED);
+            //a.jLabelSelectOption.setForeground(Color.RED);
 
             System.out.println("Error in ApplicationLauncher: " + e.toString());
         }
