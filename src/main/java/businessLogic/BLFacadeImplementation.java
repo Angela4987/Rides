@@ -23,10 +23,11 @@ import domain.Mezua;
 import domain.Mugimendua;
 import exceptions.RideMustBeLaterThanTodayException;
 import exceptions.erreklamazioaEbatzitaException;
+import iterator.ExtendedIterator;
 import exceptions.AlertaAlreadyExistException;
 import exceptions.KotxeaAlreadyExistException;
 import exceptions.RideAlreadyExistException;
-
+import iterator.DepartingCitiesIterator;
 /**
  * It implements the business logic as a web service.
  */
@@ -66,6 +67,13 @@ public class BLFacadeImplementation  implements BLFacade {
 
 		return departLocations;
 
+	}
+	
+	@WebMethod public ExtendedIterator<String> getDepartingCitiesIterator() {
+
+	    List<String> cities = getDepartCities();
+
+	    return new DepartingCitiesIterator(cities);
 	}
 	/**
 	 * {@inheritDoc}
@@ -367,5 +375,7 @@ public class BLFacadeImplementation  implements BLFacade {
 	public Driver getDriver(String izena) {
 		return dbManager.getDriver(izena);
 	}
+	
+
 
 }

@@ -17,6 +17,7 @@ import domain.Mezua;
 import domain.Mugimendua;
 import exceptions.RideMustBeLaterThanTodayException;
 import exceptions.erreklamazioaEbatzitaException;
+import iterator.ExtendedIterator;
 import exceptions.AlertaAlreadyExistException;
 import exceptions.KotxeaAlreadyExistException;
 import exceptions.RideAlreadyExistException;
@@ -167,5 +168,7 @@ public interface BLFacade  {
 	@WebMethod public Ride getRide(int bidaiZenbaki);		// GEHITU
 	
 	@WebMethod public Driver getDriver(String izena);
+	
+	@WebMethod public ExtendedIterator<String> getDepartingCitiesIterator();
 
 }
