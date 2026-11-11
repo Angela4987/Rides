@@ -165,5 +165,7 @@ public interface BLFacade  {
 	@WebMethod public List<Mezua> mezuakLortu(int errekzbk);		// GEHITU
 	
 	@WebMethod public Ride getRide(int bidaiZenbaki);		// GEHITU
+	
+	@WebMethod public Driver getDriver(String izena);
 
 }

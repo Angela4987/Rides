@@ -362,5 +362,10 @@ public class BLFacadeImplementation  implements BLFacade {
 	public Ride getRide(int bidaiZenbaki) {
 		return dbManager.getRide(bidaiZenbaki);
 	}
+	
+	@WebMethod
+	public Driver getDriver(String izena) {
+		return dbManager.getDriver(izena);
+	}
 
 }

@@ -98,6 +98,7 @@ public class DataAccess  {
 			Driver driver1=new Driver("driver1@gmail.com","Aitor Fernandez");
 			Driver driver2=new Driver("driver2@gmail.com","Ane Gaztañaga");
 			Driver driver3=new Driver("driver3@gmail.com","Alejandra Redondo");
+			Driver driver4=new Driver("driver4@gmail.com","Urtzi");
 
 			// Bidaiari berria sortu
 			User user1=new Bidaiaria("bidaiari@gmail.com","bidaiari","Magdalena Sevillano");
@@ -122,6 +123,11 @@ public class DataAccess  {
 			driver2.addRide("Eibar", "Gasteiz", UtilDate.newDate(year,month,6), 2, 5);
 
 			driver3.addRide(BILBO, d, UtilDate.newDate(year,month,14), 1, 3);
+			
+			driver4.addRide("Donostia", "Madrid", UtilDate.newDate(year,month,30), 5, 20);
+			driver4.addRide("Irun", "Donostia", UtilDate.newDate(year,month,30), 5, 2);
+			driver4.addRide("Madrid", "Donostia", UtilDate.newDate(year,month,10), 5, 5);
+			driver4.addRide("Barcelona", "Madrid", UtilDate.newDate(year,month,20), 0, 10);
 			
 			// GEHITU kotxea
 		//	((Driver)user2).addKotxe("1234 ABC", 4, "Audi");
@@ -149,6 +155,7 @@ public class DataAccess  {
 			db.persist(driver1);
 			db.persist(driver2);
 			db.persist(driver3);
+			db.persist(driver4);
 
 			db.persist(user1);
 			db.persist(user2);
@@ -933,6 +940,15 @@ public class DataAccess  {
 		Ride r = db.find(Ride.class, bidaiZenbaki);
 		close();
 		return r;
+	}
+	
+	public Driver getDriver(String izena) {
+		open();
+		TypedQuery<Driver> query = db.createQuery("SELECT d FROM Driver d WHERE d.izena=?1", Driver.class);
+		query.setParameter(1, izena);
+		List<Driver> gidariak = query.getResultList();
+		close();
+		return gidariak.isEmpty() ? null : gidariak.get(0);
 	}
 
 }
