@@ -8,18 +8,14 @@ public class IteratorMain {
     public static void main(String[] args) {
 
         try {
-
             BLFacade blFacade = BLFacadeFactory.createBLFacade();
 
             ExtendedIterator<String> i =blFacade.getDepartingCitiesIterator();
 
             String c;
-
             System.out.println("_____________________");
             System.out.println("FROM LAST TO FIRST");
-
             i.goLast();
-
             while (i.hasPrevious()) {
                 c = i.previous();
                 System.out.println(c);

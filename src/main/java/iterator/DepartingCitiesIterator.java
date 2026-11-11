@@ -41,6 +41,4 @@ public class DepartingCitiesIterator implements ExtendedIterator<String>{
 	    public void goLast() {
 	    	pos = cities.size();
 	    }
-	
-
 }
